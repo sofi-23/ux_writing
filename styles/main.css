@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.sans {
+  font-family: "DM Sans", sans-serif;
+}
+
+.textoBlanco {
+  color: #fafcfc;
+}
+
+.hero {
+  background: transparent url(../img/fondoContacto.jpg) 0% 0% no-repeat padding-box;
+  background-size: cover;
+  color: #fafcfc;
+}
+
+.hero img {
+  width: 10%;
+  height: auto;
+}
+
+.contactoRedes .instagram, .contactoRedes .youtube, .contactoRedes .linkedin {
+  flex-basis: 32% !important;
+}
+
+.informacion {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-image: url(../img/fondoCursos.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  width: 100%;
+  height: auto;
+}
+
+.informacion {
+  color: #fafcfc;
+}
+
+.informacion p {
+  padding-right: 10rem;
+  padding-left: 10rem;
+}
+
+.informacionBotones {
+  padding-top: 3rem;
+  padding-bottom: 0;
+}
+
+.boton {
+  background-color: #23272b;
+  color: #fafcfc;
+}
+
+.datos {
+  padding-top: 3rem;
+  padding-bottom: 0;
+  box-shadow: 6px 10px 10px #00000029;
+}
+
+.elemento {
+  height: 10%;
+}
+
+.elemento img {
+  width: 50px;
+  height: auto;
+}
+
+.requisitosYdirigido {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.requisitos, .dirigido {
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+
+.tarjetaDocente {
+  background: #23272b padding-box;
+  height: 30rem;
+  width: 30rem;
+  color: #fafcfc;
+  border-radius: 10%;
+}
+
+.fotoProfe {
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.fotoProfe img {
+  width: 105%;
+  height: auto;
+  position: relative;
+  margin-top: -20px;
+}
+
+.heroNovedades {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-image: url(../img/heroNovedades.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  opacity: 0.3;
+  width: 100%;
+  height: auto;
+}
+
+.heroNovedades .heroNovedadesTitulo {
+  opacity: 1 !important;
+}
+
+.footer {
+  background-color: #23272b;
+}
+
+.redes img {
+  width: 30%;
+  height: 30%;
+}
+/*# sourceMappingURL=main.css.map */

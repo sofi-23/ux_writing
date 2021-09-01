@@ -1,0 +1,61 @@
+.informacion {
+  @include padding-X(5rem, 5rem);
+  background-image: url(../img/fondoCursos.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  width: 100%;
+  height: auto;
+}
+.informacion {
+  color: $blanco;
+}
+.informacion p {
+  @include padding-Y(10rem, 10rem);
+}
+.informacionBotones {
+  @include padding-X(3rem, 0);
+}
+.boton {
+  background-color: $negro;
+  color: $blanco;
+}
+.datos {
+  @include padding-X(3rem, 0);
+  box-shadow: 6px 10px 10px #00000029;
+}
+.elemento {
+  height: 10%;
+}
+.elemento img {
+  width: 50px;
+  height: auto;
+}
+.requisitosYdirigido {
+  @include padding-X(5rem, 5rem);
+}
+.requisitos {
+  @include padding-Y(5rem, 5rem);
+}
+.dirigido {
+  @extend .requisitos;
+}
+.tarjetaDocente {
+  background: $negro padding-box;
+  height: 30rem;
+  width: 30rem;
+  color: $blanco;
+  border-radius: 10%;
+}
+.fotoProfe {
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.fotoProfe img {
+  width: 105%;
+  height: auto;
+  position: relative;
+  margin-top: -20px;
+}

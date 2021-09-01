@@ -1,0 +1,21 @@
+.hero {
+  background: transparent url(../img/fondoContacto.jpg) 0% 0% no-repeat
+    padding-box;
+  background-size: cover;
+  color: $blanco;
+}
+.hero img {
+  width: 10%;
+  height: auto;
+}
+.contactoRedes {
+  .instagram {
+    flex-basis: 32% !important;
+  }
+  .youtube {
+    @extend .instagram;
+  }
+  .linkedin {
+    @extend .instagram;
+  }
+}

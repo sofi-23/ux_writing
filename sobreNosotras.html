@@ -1,12 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <header id="header">
+      <nav class="navbar navbar-nav navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">UX Writing</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"
+              ><!--icono menu hamburguesa--></span
+            ></button
+          ><!--Menú hamburguesa-->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Cursos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Curso de UX Writing</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Introducción al UX w</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Tienda de cursos</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Novedades
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Canal de youtube</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Eventos/ Webinars</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Repositorio ux</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Sobre Nosotras</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <section>
+        <h4 class="text-center mt-5">¡Bienvenidos!</h4>
+        <h6 class="text-center">
+          Te damos la bienvenida a esta cuenta de
+          <strong> UX Writing Argentina</strong>
+        </h6>
+        <p class="text-center">
+          Acá vas a encontrar una comunidad de gente super copada que comparte
+          información, datos, tips sobre UX Writing y por qué no también sobre
+          otras cosas, como por ejemplo, donde comprar una remera copada.
+          Queremos formar una comunidad que interactúe entre sí y genere
+          vínculos y nos ayudemos mutuamente! Esperamos te guste todo el
+          contenido y puedas conocer mucha gente.
+        </p>
+      </section>
+      <section>
+        <div class="SnNosotras d-flex mt-5">
+          <div>
+            <h5>Nosotras</h5>
+            <h6>¡Te contamos quiénes somos!</h6>
+            <p>
+              Somos Jossie y Cami, dos chicas que casualmente un curso de
+              Coderhouse o el "destino"unió.
+            </p>
+            <p>
+              Hicimos el curso de UX Writing de Coderhouse y se nos ocurrió que
+              falta ba una organización que hablara sobre el UX Writing en
+              Argentina, específicamente.
+            </p>
+            <p>
+              La mayoría de la información sobre UX Writing está en inglés o es
+              poco accesible, ya que requiere de cursos caros y a veces en
+              Dólares, esa moneda que le tenemos tanto miedo o respeto en
+              Argentina.
+            </p>
+          </div>
+          <div><img src="./img/Sn_1.jpeg" /></div>
+        </div>
+        <div class="SnMision d-flex mt-5">
+          <div><img src="./img/Sn_2.png" /></div>
+          <div>
+            <h5>Misión</h5>
+            <p>
+              A raíz de esta dificultad, tuvimos la idea de democratizar el
+              contenido y compartirlo de forma fácil, accesible y divertida.
+            </p>
+            <p>
+              Circularlo y posibilitar el acceso a la disciplina es nuestra
+              misión.
+            </p>
+            <p>
+              Que toda persona curiosa y que quiera aprender sobre UX Writing lo
+              pueda hacer sin ninguna barrera de ningún tipo, ni física ni
+              ideológica.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h4 class="text-center mt-5">Te damos la bienvenida</h4>
+        <p class="text-center">
+          a esta hermosa comunidad que estamos queriendo armar, para poder
+          formar una red de contactos y conocimiento colectivo que nos permita
+          retroalimentarnos y crecer como equipo.
+        </p>
+        <p class="text-center">
+          ¡Gracias por leer y esperamos que quieras formar parte!
+        </p>
+        <button class="btn btn-primary mt-4 mb-5">Volver al home</button>
+      </section>
+    </main>
+    <footer class="footer p-2 textoBlanco">
+      <div class="container sans">
+        <div class="row info">
+          <div class="col-6 d-flex flex-column footerDatos">
+            <h3>Ux Writing</h3>
+            <p class="m-0">Consultas a</p>
+            <a href="uxwritingargentina@gmail.com"
+              >uxwritingargentina@gmail.com</a
+            >
+          </div>
+          <div class="col-3 d-flex flex-column redes">
+            <p>Seguinos:</p>
+            <div class="d-flex iconos">
+              <img src="./img/instagram.svg" alt="" /><img
+                src="./img/youtube.svg"
+                alt=""
+              /><img src="./img/linkedin.svg" alt="" />
+            </div>
+          </div>
+          <div class="col-3 d-flex flex-column links">
+            <p>Links útiles:</p>
+            <ul>
+              <li><a href="">Preguntas frecuentas</a></li>
+              <li><a href="">Contacto</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Webinars</a></li>
+              <li><a href="">Repositorio</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row copyright">
+          <div class="col-6 d-flex terminos">
+            <p>Términos y condiciones - Políticas de privacidad</p>
+          </div>
+          <div class="col-6 d-flex justify-content-center derechos">
+            <p>Ux writing 2021. Todos los derechos reservados</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

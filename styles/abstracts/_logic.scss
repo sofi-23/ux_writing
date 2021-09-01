@@ -1,1 +1,22 @@
-//mixins 
+// mixin para height y width
+@mixin sizes($width, $height) {
+  height: $height;
+  width: $width;
+}
+// mixin para padding horizontal y padding vertical
+@mixin padding-X($padding-top, $padding-bottom) {
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
+}
+@mixin padding-Y($padding-right, $padding-left) {
+  padding-right: $padding-right;
+  padding-left: $padding-left;
+}
+@mixin margin-X($margin-top, $margin-bottom) {
+  margin-top: $margin-top;
+  margin-bottom: $margin-bottom;
+}
+@mixin margin-Y($margin-right, $margin-left) {
+  margin-right: $margin-right;
+  margin-left: $margin-left;
+}
