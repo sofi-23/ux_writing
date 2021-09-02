@@ -1,13 +1,30 @@
 html {
-  font-size: 16px;
+  font-size: 16px !important;
   font-family: $sans;
 }
 .titulo {
+  font-family: $sans !important;
   font-weight: $sans-bold;
   font-size: $titulo;
   color: $negroTextos;
 }
+.subtitulo {
+  font-family: $sans !important;
+  font-weight: $sans-bold;
+  font-size: $subtitulo;
+  color: $negroTextos;
+}
 .texto {
+  font-family: $sans !important;
   font-size: $texto;
   color: $negroTextos;
+}
+.blanco {
+  color: $blanco;
+}
+.botonCeleste {
+  background-color: $celesteBotones;
+  color: $blanco;
+  font-family: $sans;
+  font-size: $botonesLetra;
 }

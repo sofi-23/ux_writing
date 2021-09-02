@@ -1,14 +1,36 @@
-.hero {
+.heroContacto {
   background: transparent url(../img/fondoContacto.jpg) 0% 0% no-repeat
     padding-box;
   background-size: cover;
   color: $blanco;
-}
-.hero img {
-  width: 10%;
-  height: auto;
+  opacity: 0.9;
+  .contactoTitulo {
+    @include padding-X(2em, 0);
+    font-family: $sans !important;
+    font-size: 2rem;
+    font-weight: $sans-bold;
+  }
+  .titulo {
+    color: $blanco;
+  }
+  .contactoMail {
+    font-family: $sans !important;
+    font-size: $texto;
+  }
+  img {
+    width: 10%;
+    height: auto;
+  }
+  .contactoImagen {
+    width: 5rem;
+  }
 }
 .contactoRedes {
+  p {
+    font-family: $sans;
+    font-weight: $sans-bold;
+    font-size: $texto;
+  }
   .instagram {
     flex-basis: 32% !important;
   }
@@ -18,4 +40,8 @@
   .linkedin {
     @extend .instagram;
   }
+}
+.fondoAcordion {
+  background-color: $acordion;
+  color: $naranjaLinks;
 }

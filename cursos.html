@@ -104,8 +104,10 @@
     <main>
       <section class="container-fluid informacion">
         <div class="row flex-column align-content-end">
-          <h2 class="col-6 text-center sans">Curso de UX</h2>
-          <p class="col-6 sans">
+          <h2 class="col-6 text-center titulo informacionTitulo">
+            Curso de UX
+          </h2>
+          <p class="col-6 texto">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
             fringilla nibh libero, in egestas mauris dignissim nec. Donec
             lacinia nec enim vitae porta. Mauris id efficitur tortor.
@@ -139,27 +141,27 @@
       <section class="container-fluid">
         <div class="row align-content-center datos sans">
           <div class="col-4 d-flex flex-column align-items-center elemento">
-            <h3 class="text-center">Duración</h3>
+            <h3 class="text-center elementoTitulo">Duración</h3>
             <img src="./img/reloj.svg" alt="" />
-            <p class="text-center">Tanto</p>
+            <p class="text-center elementoTexto">Tanto</p>
           </div>
           <div class="col-4 d-flex flex-column align-items-center elemento">
-            <h3 class="text-center">Dedicación</h3>
+            <h3 class="text-center elementoTitulo">Dedicación</h3>
             <img src="./img/persona-de-libre-dedicacion.svg" alt="" />
-            <p class="text-center">Tanto</p>
+            <p class="text-center elementoTexto">Tanto</p>
           </div>
           <div class="col-4 d-flex flex-column align-items-center elemento">
-            <h3 class="text-center">Modalidad</h3>
+            <h3 class="text-center elementoTitulo">Modalidad</h3>
             <img src="./img/ordenador-personal.svg" alt="" />
-            <p class="text-center">Online</p>
+            <p class="text-center elementoTexto">Online</p>
           </div>
         </div>
       </section>
       <section class="container">
         <div class="row sans requisitosYdirigido">
           <div class="col-6 requisitos">
-            <h3 class="text-center">Requisitos</h3>
-            <ul>
+            <h3 class="text-center titulo">Requisitos</h3>
+            <ul class="texto">
               <li>rem ipsum dolor sit amet, consectetur adipiscing elit.</li>
               <li>
                 isque eget molestie nulla, sed consequat est. Sed erat nunc,
@@ -172,8 +174,8 @@
             </ul>
           </div>
           <div class="col-6 dirigido">
-            <h3 class="text-center">Dirigido a</h3>
-            <ul>
+            <h3 class="text-center titulo">Dirigido a</h3>
+            <ul class="texto">
               <li>rem ipsum dolor sit amet, consectetur adipiscing elit.</li>
               <li>
                 isque eget molestie nulla, sed consequat est. Sed erat nunc,
@@ -182,36 +184,36 @@
             </ul>
           </div>
         </div>
-        <div class="row mb-3 sans docente">
+        <div class="row mb-3 docente">
           <div class="col-12 d-flex justify-content-center">
             <div
               class="d-flex flex-column justify-content-center tarjetaDocente"
             >
-              <h5 class="text-center mb-5">Profesora</h5>
+              <h5 class="text-center mb-3 titulo blanco">Profesora</h5>
               <div class="align-self-center fotoProfe">
                 <img src="./img/jesi.jpg" alt="..." />
               </div>
-              <p class="text-center">Josefina Anschutz</p>
-              <p class="text-center">Ux ui Designer</p>
+              <p class="text-center subtitulo blanco mt-2">Josefina Anschutz</p>
+              <p class="text-center texto blanco">Ux ui Designer</p>
             </div>
           </div>
           <div class="col-12 d-flex justify-content-center mt-3">
-            <a href="#" class="w-25 btn btn-primary">Ver Perfil</a>
+            <a href="#" class="btn rounded-pill botonCeleste">Ver Perfil</a>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer p-2 textoBlanco">
-      <div class="container sans">
+    <footer class="footer p-2 blanco">
+      <div class="container">
         <div class="row info">
           <div class="col-6 d-flex flex-column footerDatos">
-            <h3>Ux Writing</h3>
-            <p class="m-0">Consultas a</p>
+            <h3 class="subtitulo blanco footerSub pb-4 pt-5">Ux Writing</h3>
+            <p class="m-0 footerConsultas">Consultas a</p>
             <a href="uxwritingargentina@gmail.com"
               >uxwritingargentina@gmail.com</a
             >
           </div>
-          <div class="col-3 d-flex flex-column redes">
+          <div class="col-3 d-flex flex-column pt-5 redes">
             <p>Seguinos:</p>
             <div class="d-flex iconos">
               <img src="./img/instagram.svg" alt="" /><img
@@ -220,7 +222,7 @@
               /><img src="./img/linkedin.svg" alt="" />
             </div>
           </div>
-          <div class="col-3 d-flex flex-column links">
+          <div class="col-3 d-flex flex-column pt-5 links">
             <p>Links útiles:</p>
             <ul>
               <li><a href="">Preguntas frecuentas</a></li>
@@ -232,10 +234,10 @@
           </div>
         </div>
         <div class="row copyright">
-          <div class="col-6 d-flex terminos">
+          <div class="col-6 d-flex">
             <p>Términos y condiciones - Políticas de privacidad</p>
           </div>
-          <div class="col-6 d-flex justify-content-center derechos">
+          <div class="col-6 d-flex justify-content-center">
             <p>Ux writing 2021. Todos los derechos reservados</p>
           </div>
         </div>

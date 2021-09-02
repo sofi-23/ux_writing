@@ -6,18 +6,22 @@
   background-position-y: center;
   width: 100%;
   height: auto;
-}
-.informacion {
+  font-family: $sans;
   color: $blanco;
+  .informacionTitulo {
+    color: $blanco;
+  }
+  p {
+    @include padding-Y(10rem, 10rem);
+    color: $blanco;
+  }
 }
-.informacion p {
-  @include padding-Y(10rem, 10rem);
-}
+
 .informacionBotones {
   @include padding-X(3rem, 0);
 }
 .boton {
-  background-color: $negroOscuro;
+  background-color: $negroTextos;
   color: $blanco;
 }
 .datos {
@@ -26,11 +30,20 @@
 }
 .elemento {
   height: 10%;
+  .elementoTitulo {
+    font-size: $subtitulo;
+  }
+  img {
+    width: 50px;
+    height: auto;
+  }
+  .elementoTexto {
+    @include padding-X(1em, 0);
+    font-size: $texto;
+    color: $textoGris;
+  }
 }
-.elemento img {
-  width: 50px;
-  height: auto;
-}
+
 .requisitosYdirigido {
   @include padding-X(5rem, 5rem);
 }
@@ -40,22 +53,25 @@
 .dirigido {
   @extend .requisitos;
 }
-.tarjetaDocente {
-  background: $negroOscuro padding-box;
-  height: 30rem;
-  width: 30rem;
-  color: $blanco;
-  border-radius: 10%;
-}
-.fotoProfe {
-  height: 200px;
-  width: 200px;
-  overflow: hidden;
-  border-radius: 50%;
-}
-.fotoProfe img {
-  width: 105%;
-  height: auto;
-  position: relative;
-  margin-top: -20px;
+.docente {
+  font-family: $sans;
+  .tarjetaDocente {
+    background: $negroTextos padding-box;
+    height: 30rem;
+    width: 30rem;
+    color: $blanco;
+    border-radius: 10%;
+    .fotoProfe {
+      height: 200px;
+      width: 200px;
+      overflow: hidden;
+      border-radius: 50%;
+      img {
+        width: 105%;
+        height: auto;
+        position: relative;
+        margin-top: -20px;
+      }
+    }
+  }
 }

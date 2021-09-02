@@ -4,35 +4,87 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 16px !important;
   font-family: "DM Sans", sans-serif;
 }
 
 .titulo {
+  font-family: "DM Sans", sans-serif !important;
   font-weight: 700;
   font-size: 1.75rem;
   color: #23272b;
 }
 
+.subtitulo {
+  font-family: "DM Sans", sans-serif !important;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #23272b;
+}
+
 .texto {
+  font-family: "DM Sans", sans-serif !important;
   font-size: 1.25rem;
   color: #23272b;
 }
 
-.hero {
-  background: transparent url(../img/fondoContacto.jpg) 0% 0% no-repeat padding-box;
-  background-size: cover;
+.blanco {
   color: #fafcfc;
 }
 
-.hero img {
+.botonCeleste {
+  background-color: #028090;
+  color: #fafcfc;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+}
+
+.heroContacto {
+  background: transparent url(../img/fondoContacto.jpg) 0% 0% no-repeat padding-box;
+  background-size: cover;
+  color: #fafcfc;
+  opacity: 0.9;
+}
+
+.heroContacto .contactoTitulo {
+  padding-top: 2em;
+  padding-bottom: 0;
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.heroContacto .titulo {
+  color: #fafcfc;
+}
+
+.heroContacto .contactoMail {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 1.25rem;
+}
+
+.heroContacto img {
   width: 10%;
   height: auto;
 }
 
+.heroContacto .contactoImagen {
+  width: 5rem;
+}
+
+.contactoRedes p {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
 .contactoRedes .instagram, .contactoRedes .youtube, .contactoRedes .linkedin {
-  -ms-flex-preferred-size: 32% !important;
-      flex-basis: 32% !important;
+  flex-basis: 32% !important;
+}
+
+.fondoAcordion {
+  background-color: #ececec;
+  color: #ffa443;
 }
 
 .informacion {
@@ -44,15 +96,18 @@ html {
   background-position-y: center;
   width: 100%;
   height: auto;
+  font-family: "DM Sans", sans-serif;
+  color: #fafcfc;
 }
 
-.informacion {
+.informacion .informacionTitulo {
   color: #fafcfc;
 }
 
 .informacion p {
   padding-right: 10rem;
   padding-left: 10rem;
+  color: #fafcfc;
 }
 
 .informacionBotones {
@@ -61,24 +116,34 @@ html {
 }
 
 .boton {
-  background-color: #000000;
+  background-color: #23272b;
   color: #fafcfc;
 }
 
 .datos {
   padding-top: 3rem;
   padding-bottom: 0;
-  -webkit-box-shadow: 6px 10px 10px #00000029;
-          box-shadow: 6px 10px 10px #00000029;
+  box-shadow: 6px 10px 10px #00000029;
 }
 
 .elemento {
   height: 10%;
 }
 
+.elemento .elementoTitulo {
+  font-size: 1.5rem;
+}
+
 .elemento img {
   width: 50px;
   height: auto;
+}
+
+.elemento .elementoTexto {
+  padding-top: 1em;
+  padding-bottom: 0;
+  font-size: 1.25rem;
+  color: #7a7e83;
 }
 
 .requisitosYdirigido {
@@ -91,22 +156,26 @@ html {
   padding-left: 5rem;
 }
 
-.tarjetaDocente {
-  background: #000000 padding-box;
+.docente {
+  font-family: "DM Sans", sans-serif;
+}
+
+.docente .tarjetaDocente {
+  background: #23272b padding-box;
   height: 30rem;
   width: 30rem;
   color: #fafcfc;
   border-radius: 10%;
 }
 
-.fotoProfe {
+.docente .tarjetaDocente .fotoProfe {
   height: 200px;
   width: 200px;
   overflow: hidden;
   border-radius: 50%;
 }
 
-.fotoProfe img {
+.docente .tarjetaDocente .fotoProfe img {
   width: 105%;
   height: auto;
   position: relative;
@@ -130,19 +199,39 @@ html {
 }
 
 .footer {
+  font-family: "DM Sans", sans-serif;
   background-color: #23272b;
+  color: #fafcfc;
 }
 
-.redes img {
+.footer .footerDatos .footerSub {
+  font-weight: normal;
+}
+
+.footer .footerDatos .footerConsultas {
+  opacity: 0.7;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #fcd0a1;
+}
+
+.footer .redes img {
   width: 30%;
   height: 30%;
 }
 
-.textoCarrusel {
-  height: 100%;
+.footer .links ul {
+  list-style: none;
+  padding: 0;
 }
 
-.textoCarrusel h3 {
-  margin-top: 50vh;
+.footer .links ul a {
+  color: #ffa443;
+}
+
+.footer .copyright {
+  opacity: 0.7;
 }
 /*# sourceMappingURL=main.css.map */

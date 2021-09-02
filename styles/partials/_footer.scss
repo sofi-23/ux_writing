@@ -1,7 +1,35 @@
 .footer {
+  font-family: $sans;
   background-color: $negroTextos;
-}
-.redes img {
-  width: 30%;
-  height: 30%;
+  color: $blanco;
+  .footerDatos {
+    .footerSub {
+      font-weight: normal;
+    }
+    .footerConsultas {
+      opacity: 0.7;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: $colorMail;
+  }
+  .redes {
+    img {
+      width: 30%;
+      height: 30%;
+    }
+  }
+  .links {
+    ul {
+      list-style: none;
+      padding: 0;
+      a {
+        color: $naranjaLinks;
+      }
+    }
+  }
+  .copyright {
+    opacity: 0.7;
+  }
 }
