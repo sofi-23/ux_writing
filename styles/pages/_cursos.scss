@@ -17,7 +17,7 @@
   @include padding-X(3rem, 0);
 }
 .boton {
-  background-color: $negro;
+  background-color: $negroOscuro;
   color: $blanco;
 }
 .datos {
@@ -41,7 +41,7 @@
   @extend .requisitos;
 }
 .tarjetaDocente {
-  background: $negro padding-box;
+  background: $negroOscuro padding-box;
   height: 30rem;
   width: 30rem;
   color: $blanco;

@@ -3,12 +3,20 @@
   padding: 0;
 }
 
-.sans {
+html {
+  font-size: 16px;
   font-family: "DM Sans", sans-serif;
 }
 
-.textoBlanco {
-  color: #fafcfc;
+.titulo {
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: #23272b;
+}
+
+.texto {
+  font-size: 1.25rem;
+  color: #23272b;
 }
 
 .hero {
@@ -23,7 +31,8 @@
 }
 
 .contactoRedes .instagram, .contactoRedes .youtube, .contactoRedes .linkedin {
-  flex-basis: 32% !important;
+  -ms-flex-preferred-size: 32% !important;
+      flex-basis: 32% !important;
 }
 
 .informacion {
@@ -52,14 +61,15 @@
 }
 
 .boton {
-  background-color: #23272b;
+  background-color: #000000;
   color: #fafcfc;
 }
 
 .datos {
   padding-top: 3rem;
   padding-bottom: 0;
-  box-shadow: 6px 10px 10px #00000029;
+  -webkit-box-shadow: 6px 10px 10px #00000029;
+          box-shadow: 6px 10px 10px #00000029;
 }
 
 .elemento {
@@ -82,7 +92,7 @@
 }
 
 .tarjetaDocente {
-  background: #23272b padding-box;
+  background: #000000 padding-box;
   height: 30rem;
   width: 30rem;
   color: #fafcfc;
@@ -126,5 +136,13 @@
 .redes img {
   width: 30%;
   height: 30%;
+}
+
+.textoCarrusel {
+  height: 100%;
+}
+
+.textoCarrusel h3 {
+  margin-top: 50vh;
 }
 /*# sourceMappingURL=main.css.map */
