@@ -1,0 +1,25 @@
+.navbar {
+  background: $grisNav;
+  .navbar-collapse {
+    justify-content: flex-end;
+    .navList {
+      justify-content: space-between;
+      width: 60%;
+      .nav-item {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        .navLink {
+          font-size: $textoTarjeta;
+          text-decoration: none;
+          color: $blanco;
+          opacity: 0.7;
+          white-space: nowrap;
+          font-family: $sans;
+          text-align: center;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

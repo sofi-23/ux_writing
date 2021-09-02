@@ -7,12 +7,11 @@ html {
   font-weight: $sans-bold;
   font-size: $titulo;
   color: $negroTextos;
+  text-align: center;
 }
 .subtitulo {
-  font-family: $sans !important;
-  font-weight: $sans-bold;
+  @extend .titulo;
   font-size: $subtitulo;
-  color: $negroTextos;
 }
 .texto {
   font-family: $sans !important;
@@ -27,4 +26,8 @@ html {
   color: $blanco;
   font-family: $sans;
   font-size: $botonesLetra;
+}
+.botonNegro {
+  background-color: $negroTextos;
+  color: $blanco;
 }

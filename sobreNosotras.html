@@ -17,13 +17,14 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link href="./fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet" />
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
     <header id="header">
-      <nav class="navbar navbar-nav navbar-expand-lg bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">UX Writing</a>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#header">UX Writing</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -33,64 +34,97 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"
-              ><!--icono menu hamburguesa--></span
-            ></button
+            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+            <!--ICONO--></button
           ><!--Menú hamburguesa-->
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto navList">
               <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Cursos
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="dropdown-item" href="#">Curso de UX Writing</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Introducción al UX w</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Tienda de cursos</a>
-                  </li>
-                </ul>
+                <div class="btn-group">
+                  <button type="button" class="btn navToggler">
+                    <a class="nav-link navLink" href="./cursos.html">Cursos</a>
+                  </button>
+                  <button
+                    type="button"
+                    class="
+                      btn
+                      nav-link
+                      navLink
+                      dropdown-toggle dropdown-toggle-split
+                    "
+                    data-bs-toggle="dropdown"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    id="navbarDropdown"
+                  >
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item" href="#">Curso de UX Writing</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Introducción al UX w</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Tienda de cursos</a>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Novedades
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Blog</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Canal de youtube</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Eventos/ Webinars</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#">Repositorio ux</a></li>
-                </ul>
+                <div class="btn-group">
+                  <button type="button" class="btn navToggler">
+                    <a class="nav-link navLink" href="./novedades.html"
+                      >Novedades</a
+                    >
+                  </button>
+                  <button
+                    type="button"
+                    class="
+                      btn
+                      nav-link
+                      navLink
+                      dropdown-toggle dropdown-toggle-split
+                    "
+                    data-bs-toggle="dropdown"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    id="navbarDropdown"
+                  >
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item" href="#">Blog</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Canal de Youtube</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Eventos/ Webinars</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Repositorio ux</a>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a
+                  class="nav-link active navLink"
+                  aria-current="page"
+                  href="./sobreNosotras.html"
                   >Sobre Nosotras</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a
+                  class="nav-link active navLink"
+                  aria-current="page"
+                  href="./contacto.html"
                   >Contacto</a
                 >
               </li>
@@ -171,26 +205,26 @@
         <button class="btn btn-primary mt-4 mb-5">Volver al home</button>
       </section>
     </main>
-    <footer class="footer p-2 blanco">
+    <footer class="footer blanco">
       <div class="container">
         <div class="row info">
-          <div class="col-6 d-flex flex-column footerDatos">
-            <h3 class="subtitulo blanco footerSub pb-4 pt-5">Ux Writing</h3>
+          <div class="col-6 footerDatos">
+            <h3 class="subtitulo blanco footerSub">Ux Writing</h3>
             <p class="m-0 footerConsultas">Consultas a</p>
             <a href="uxwritingargentina@gmail.com"
               >uxwritingargentina@gmail.com</a
             >
           </div>
-          <div class="col-3 d-flex flex-column pt-5 redes">
+          <div class="col-3 redes">
             <p>Seguinos:</p>
-            <div class="d-flex iconos">
+            <div class="iconos">
               <img src="./img/instagram.svg" alt="" /><img
                 src="./img/youtube.svg"
                 alt=""
               /><img src="./img/linkedin.svg" alt="" />
             </div>
           </div>
-          <div class="col-3 d-flex flex-column pt-5 links">
+          <div class="col-3 links">
             <p>Links útiles:</p>
             <ul>
               <li><a href="">Preguntas frecuentas</a></li>
@@ -202,10 +236,10 @@
           </div>
         </div>
         <div class="row copyright">
-          <div class="col-6 d-flex">
+          <div class="col-6">
             <p>Términos y condiciones - Políticas de privacidad</p>
           </div>
-          <div class="col-6 d-flex justify-content-center">
+          <div class="col-6 text-center">
             <p>Ux writing 2021. Todos los derechos reservados</p>
           </div>
         </div>

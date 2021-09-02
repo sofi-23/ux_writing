@@ -1,13 +1,63 @@
 .heroNovedades {
   @include padding-X(5rem, 5rem);
+  @include sizes(100%, auto);
   background-image: url(../img/heroNovedades.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
   opacity: 0.3;
-  width: 100%;
-  height: auto;
   .heroNovedadesTitulo {
     opacity: 1 !important;
+  }
+}
+.eventos {
+  @include padding-X(2rem, 0);
+  .eventosTarjeta {
+    @include flexJusCen;
+    @include padding-X(2rem, 0);
+    .eventosTarjetaCuerpo {
+      @include flexColumn;
+      justify-content: space-evenly;
+      height: 100%;
+      .card-title {
+        @include padding-Y(0, 1rem);
+      }
+      .card-text {
+        @include padding-Y(0, 1rem);
+      }
+      .eventosBotonCaja {
+        @include padding-Y(2rem, 0);
+        display: flex;
+        justify-content: end;
+        .eventosBoton {
+          width: 25%;
+        }
+      }
+    }
+  }
+  .botonMasEventosCaja {
+    @include flexJusCen;
+    @include padding-X(2rem, 2rem);
+    .botonMasEventos {
+      width: 10%;
+    }
+  }
+}
+.repositorio {
+  @include padding-X(2rem, 0);
+  .repositorioTarjeta {
+    @include padding-X(2rem, 0);
+    @include flexJusCen;
+    .repositorioTarjetaCuerpo {
+      @include flexColumn;
+    }
+  }
+  .repositorioBotonCaja {
+    @include flexJusCen;
+    @include padding-X(2rem, 2rem);
+    .repositorioBoton {
+      font-family: $sans;
+      width: 15%;
+    }
   }
 }

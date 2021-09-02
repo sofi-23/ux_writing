@@ -3,7 +3,7 @@
   height: $height;
   width: $width;
 }
-// mixin para padding horizontal y padding vertical
+// mixin para padding y margin, horizontal y vertical
 @mixin padding-X($padding-top, $padding-bottom) {
   padding-top: $padding-top;
   padding-bottom: $padding-bottom;
@@ -19,4 +19,13 @@
 @mixin margin-Y($margin-right, $margin-left) {
   margin-right: $margin-right;
   margin-left: $margin-left;
+}
+// mixin para flex column y flex justify center
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+@mixin flexJusCen {
+  display: flex;
+  justify-content: center;
 }

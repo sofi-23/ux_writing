@@ -1,10 +1,14 @@
 .footer {
+  padding: 1rem;
   font-family: $sans;
   background-color: $negroTextos;
   color: $blanco;
   .footerDatos {
+    @include flexColumn;
     .footerSub {
+      @include padding-X(2rem, 2rem);
       font-weight: normal;
+      text-align: left;
     }
     .footerConsultas {
       opacity: 0.7;
@@ -15,12 +19,24 @@
     color: $colorMail;
   }
   .redes {
-    img {
-      width: 30%;
-      height: 30%;
+    @include padding-X(2rem, 0);
+    @include flexColumn;
+    p {
+      font-size: $textoTarjeta;
+    }
+    .iconos {
+      display: flex;
+      img {
+        @include sizes(30%, 30%);
+      }
     }
   }
   .links {
+    @include padding-X(2rem, 0);
+    @include flexColumn;
+    p {
+      font-size: $textoTarjeta;
+    }
     ul {
       list-style: none;
       padding: 0;

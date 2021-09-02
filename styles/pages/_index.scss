@@ -1,0 +1,33 @@
+.carousel-inner {
+  height: 95vh;
+  .textoCarrusel {
+    height: 100%;
+    width: 50%;
+    margin: auto;
+    background: rgba(35, 39, 43, 0.3);
+    .tituloCarrusel {
+      margin-top: 35vh;
+      font-size: 3.125rem;
+      color: $blanco;
+      font-family: $sans;
+      font-weight: $sans-bold;
+    }
+    .subtituloCarrusel {
+      font-size: 2rem;
+      color: $blanco;
+      font-weight: $sans-bold;
+      font-family: $sans;
+    }
+    .botonCarrusel {
+      background: $naranjaLinks;
+      border-color: $naranjaLinks;
+      font-size: $botonesLetra;
+      color: #ffff;
+      width: 25%;
+      padding-left: 1.2em;
+      padding-right: 1.2em;
+      white-space: nowrap;
+      font-family: $sans;
+    }
+  }
+}
