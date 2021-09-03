@@ -1,5 +1,5 @@
 .carousel-inner {
-  height: 95vh;
+  height: auto;
   .textoCarrusel {
     height: 100%;
     width: 50%;
@@ -44,4 +44,20 @@
     position: relative;
     left: 10rem;
   }
+}
+
+.homeSobreNosotras {
+  background-image: url("../img/sn_home.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+  height: 60vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .homeSnTextoContainer {
+    width: 45%;
+  }
+  
 }

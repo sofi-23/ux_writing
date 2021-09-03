@@ -82,7 +82,7 @@ html {
 }
 
 .carousel-inner {
-  height: 95vh;
+  height: auto;
 }
 
 .carousel-inner .textoCarrusel {
@@ -134,6 +134,28 @@ html {
 .card .botonCard {
   position: relative;
   left: 10rem;
+}
+
+.homeSobreNosotras {
+  background-image: url("../img/sn_home.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+  height: 60vh;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homeSobreNosotras .homeSnTextoContainer {
+  width: 45%;
 }
 
 .informacion {
@@ -403,6 +425,33 @@ html {
 .repositorio .repositorioBotonCaja .repositorioBoton {
   font-family: "DM Sans", sans-serif;
   width: 15%;
+}
+
+.snBienvenidosContainer {
+  width: 60%;
+  margin: auto;
+}
+
+.SnNosotras, .SnMision {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 2rem;
+}
+
+.bienvenida2Sn {
+  width: 60%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .heroContacto {
