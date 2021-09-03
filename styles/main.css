@@ -47,18 +47,27 @@ html {
 }
 
 .navbar .navbar-collapse {
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .navbar .navbar-collapse .navList {
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 60%;
 }
 
 .navbar .navbar-collapse .navList .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .navbar .navbar-collapse .navList .nav-item .navLink {
@@ -80,7 +89,6 @@ html {
   height: 100%;
   width: 50%;
   margin: auto;
-  background: rgba(35, 39, 43, 0.3);
 }
 
 .carousel-inner .textoCarrusel .tituloCarrusel {
@@ -104,10 +112,28 @@ html {
   font-size: 1rem;
   color: #ffff;
   width: 25%;
-  padding-left: 1.2em;
-  padding-right: 1.2em;
+  padding-left: 1em;
+  padding-right: 1em;
   white-space: nowrap;
   font-family: "DM Sans", sans-serif;
+}
+
+.card {
+  font-family: "DM Sans", sans-serif;
+}
+
+.card .card-title {
+  font-size: 1.5rem;
+}
+
+.card .card-text {
+  font-size: 1.125rem;
+  opacity: .7;
+}
+
+.card .botonCard {
+  position: relative;
+  left: 10rem;
 }
 
 .informacion {
@@ -122,8 +148,12 @@ html {
 }
 
 .informacion .informacionRow {
-  flex-direction: column;
-  align-content: end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: end;
+      align-content: end;
 }
 
 .informacion .informacionTitulo {
@@ -144,14 +174,22 @@ html {
 .datos {
   padding-top: 3rem;
   padding-bottom: 0;
-  box-shadow: 6px 10px 10px #00000029;
+  -webkit-box-shadow: 6px 10px 10px #00000029;
+          box-shadow: 6px 10px 10px #00000029;
 }
 
 .elemento {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 10%;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .elemento .elementoTitulo {
@@ -183,17 +221,28 @@ html {
 }
 
 .docente {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: "DM Sans", sans-serif;
 }
 
 .docente .tarjetaDocente {
   height: 25rem;
   width: 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: #23272b padding-box;
   border-radius: 10%;
 }
@@ -203,7 +252,9 @@ html {
   width: 150px;
   overflow: hidden;
   border-radius: 50%;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .docente .tarjetaDocente .fotoProfe img {
@@ -218,8 +269,12 @@ html {
 }
 
 .docenteBoton {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .heroNovedades {
@@ -244,16 +299,27 @@ html {
 }
 
 .eventos .eventosTarjeta {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 2rem;
   padding-bottom: 0;
 }
 
 .eventos .eventosTarjeta .eventosTarjetaCuerpo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   height: 100%;
 }
 
@@ -270,8 +336,12 @@ html {
 .eventos .eventosTarjeta .eventosTarjetaCuerpo .eventosBotonCaja {
   padding-right: 2rem;
   padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 .eventos .eventosTarjeta .eventosTarjetaCuerpo .eventosBotonCaja .eventosBoton {
@@ -279,8 +349,12 @@ html {
 }
 
 .eventos .botonMasEventosCaja {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -297,18 +371,31 @@ html {
 .repositorio .repositorioTarjeta {
   padding-top: 2rem;
   padding-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .repositorio .repositorioTarjeta .repositorioTarjetaCuerpo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .repositorio .repositorioBotonCaja {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -319,12 +406,19 @@ html {
 }
 
 .heroContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: transparent url(../img/fondoContacto.jpg) 0% 0% no-repeat padding-box;
   background-size: cover;
   opacity: 0.9;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .heroContacto .contactoTitulo {
@@ -352,13 +446,21 @@ html {
 }
 
 .cajaContactoRedes {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .cajaContactoRedes .contactoRedes {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .cajaContactoRedes .contactoRedes p {
@@ -368,14 +470,24 @@ html {
 }
 
 .cajaContactoRedes .contactoRedes .instagram, .cajaContactoRedes .contactoRedes .youtube, .cajaContactoRedes .contactoRedes .linkedin {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-basis: 32% !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 32% !important;
+      flex-basis: 32% !important;
 }
 
 .preguntas {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .preguntas .accordion .accordion-button:not(.collapsed) {
@@ -385,7 +497,8 @@ html {
 }
 
 .preguntas .accordion .accordion-button:focus {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .preguntas .accordion .accordion-button:after {
@@ -405,8 +518,13 @@ html {
 }
 
 .footer .footerDatos {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footer .footerDatos .footerSub {
@@ -428,8 +546,13 @@ html {
 .footer .redes {
   padding-top: 2rem;
   padding-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footer .redes p {
@@ -437,6 +560,8 @@ html {
 }
 
 .footer .redes .iconos {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -448,8 +573,13 @@ html {
 .footer .links {
   padding-top: 2rem;
   padding-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footer .links p {
