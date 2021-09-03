@@ -316,6 +316,26 @@ html {
   opacity: 1 !important;
 }
 
+.botonBlog {
+  background: #2e363e;
+  color: #ffff;
+}
+
+.seccionYbNovedades {
+  background-color: #EFEFEF;
+  padding: 2rem;
+  padding-bottom: 8rem;
+}
+
+.seccionYbNovedades .iconoYbNovedades {
+  width: 6rem;
+}
+
+.seccionYbNovedades a {
+  text-decoration: none;
+  padding-left: 1rem;
+}
+
 .eventos {
   padding-top: 2rem;
   padding-bottom: 0;
