@@ -146,7 +146,7 @@
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="0"
-              class="active"
+              class="active indicadorCarrusel"
               aria-current="true"
               aria-label="Slide 1"
             ></button>
@@ -155,20 +155,23 @@
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="1"
               aria-label="Slide 2"
+              class="indicadorCarrusel"
             ></button>
             <button
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="2"
               aria-label="Slide 3"
+              class="indicadorCarrusel"
             ></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="./img/carrusel_1.png" class="d-block w-100" alt="ux writing" />
-              <div class="carousel-caption d-none d-md-block textoCarrusel">
-                <h3 class="tituloCarrusel">Conocé nuestros cursos</h3>
-                <p class="subtituloCarrusel">
+              <div class="filtroCarrusel" ></div>
+              <div class="carousel-caption d-none d-md-block textoCarrusel texto1">
+                <h3 class="tituloCarrusel titulo1">Conocé nuestros cursos</h3>
+                <p class="subtituloCarrusel subtitulo1">
                   Aprende sobre lo último en UX Writing, junto a una gran
                   comunidad.
                 </p>
@@ -180,10 +183,10 @@
             </div>
             <div class="carousel-item">
               <img src="./img/carrusel_2.png" class="d-block w-100" alt="ux writing" />
-              
+              <div class="filtroCarrusel"></div>
               <div class="carousel-caption d-none d-md-block textoCarrusel">
                 <h3 class="tituloCarrusel">Los últimos eventos y webinars</h3>
-                <p class="subtituloCarrusel">
+                <p class="subtituloCarrusel subtitulo2">
                   Entérate de las novedades más importantes del UX Writing
                 </p>
                 <button class="botonCarrusel btn btn-primary rounded-pill">
@@ -193,7 +196,8 @@
             </div>
             <div class="carousel-item">
               <img src="./img/carrusel_3.png" class="d-block w-100" alt="ux writing" />
-              <div class="carousel-caption d-none d-md-block textoCarrusel">
+              <div class="filtroCarrusel"></div>
+              <div class="carousel-caption d-none d-md-block textoCarrusel texto3">
                 <h3 class="tituloCarrusel">¿Querés saber mas sobre UX Writing en Argentina?</h3>
                 <button class="botonCarrusel btn btn-primary rounded-pill">
                   Conocenos
