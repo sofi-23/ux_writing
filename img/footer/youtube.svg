@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51" height="49" viewBox="0 0 51 49">
+  <defs>
+    <clipPath id="clip-path">
+      <ellipse id="Elipse_3" data-name="Elipse 3" cx="25.5" cy="24.5" rx="25.5" ry="24.5" transform="translate(64.792 40)" fill="#fafcfc"/>
+    </clipPath>
+  </defs>
+  <g id="Enmascarar_grupo_3" data-name="Enmascarar grupo 3" transform="translate(-64.792 -40)" clip-path="url(#clip-path)">
+    <circle id="Elipse_20" data-name="Elipse 20" cx="24.5" cy="24.5" r="24.5" transform="translate(65.792 40)" fill="#23272b"/>
+    <path id="youtube" d="M28.593,6.14H7.495A7.5,7.5,0,0,0,0,13.635V24.182a7.5,7.5,0,0,0,7.495,7.495h21.1a7.5,7.5,0,0,0,7.495-7.495V13.635A7.5,7.5,0,0,0,28.593,6.14ZM23.524,19.421l-9.868,4.707a.4.4,0,0,1-.567-.358V14.063a.4.4,0,0,1,.575-.353l9.868,5A.4.4,0,0,1,23.524,19.421Z" transform="translate(72.248 45.592)" fill="#fafcfc"/>
+  </g>
+</svg>

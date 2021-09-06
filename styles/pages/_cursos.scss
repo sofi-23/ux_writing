@@ -1,7 +1,7 @@
 .informacion {
   @include padding-X(5rem, 5rem);
   @include sizes(100%, auto);
-  background-image: url(../img/fondoCursos.png);
+  background-image: url(../img/cursos/shape.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
@@ -33,7 +33,7 @@
     font-size: $subtitulo;
   }
   img {
-    @include sizes(50px, auto);
+    @include sizes(3rem, auto);
   }
   .elementoTexto {
     @include padding-X(1em, 0);
@@ -62,15 +62,7 @@
     background: $negroTextos padding-box;
     border-radius: 10%;
     .fotoProfe {
-      @include sizes(150px, 150px);
-      overflow: hidden;
-      border-radius: 50%;
       align-self: center;
-      img {
-        @include sizes(105%, auto);
-        position: relative;
-        margin-top: -20px;
-      }
     }
     .docenteNombre {
       font-weight: normal;
@@ -78,5 +70,6 @@
   }
 }
 .docenteBoton {
+  @include padding-X(3rem, 6rem);
   @include flexJusCen;
 }

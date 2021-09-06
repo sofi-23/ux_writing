@@ -38,9 +38,23 @@ html {
   font-size: 1rem;
 }
 
-.botonNegro {
-  background-color: #23272b;
+.botonCeleste:hover {
+  transition: 0.2s;
   color: #fafcfc;
+  background-color: #026c7a;
+  box-shadow: 6px 10px 10px #00000029;
+}
+
+.botonNegro {
+  background-color: #2e363e;
+  color: #fafcfc;
+}
+
+.botonNegro:hover {
+  color: #fafcfc;
+  transition: 0.2s;
+  background-color: #15171a;
+  box-shadow: 6px 10px 10px #00000029;
 }
 
 .navbar {
@@ -48,27 +62,18 @@ html {
 }
 
 .navbar .navbar-collapse {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .navbar .navbar-collapse .navList {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 60%;
 }
 
 .navbar .navbar-collapse .navList .nav-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
 .navbar .navbar-collapse .navList .nav-item .navLink {
@@ -149,7 +154,7 @@ html {
 }
 
 .indicadorCarrusel {
-  height: .5rem !important;
+  height: 0.5rem !important;
 }
 
 .card {
@@ -162,7 +167,7 @@ html {
 
 .card .card-text {
   font-size: 1.125rem;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .card .botonCard {
@@ -171,21 +176,15 @@ html {
 }
 
 .homeSobreNosotras {
-  background-image: url("../img/sn_home.png");
+  background-image: url("../img/index/sn_home.png");
   background-repeat: no-repeat;
   background-position: center;
   padding: 0;
   height: 60vh;
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .homeSobreNosotras .homeSnTextoContainer {
@@ -197,19 +196,15 @@ html {
   padding-bottom: 5rem;
   height: auto;
   width: 100%;
-  background-image: url(../img/fondoCursos.png);
+  background-image: url(../img/cursos/shape.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
 }
 
 .informacion .informacionRow {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: end;
-      align-content: end;
+  flex-direction: column;
+  align-content: end;
 }
 
 .informacion .informacionTitulo {
@@ -230,22 +225,14 @@ html {
 .datos {
   padding-top: 3rem;
   padding-bottom: 0;
-  -webkit-box-shadow: 6px 10px 10px #00000029;
-          box-shadow: 6px 10px 10px #00000029;
+  box-shadow: 6px 10px 10px #00000029;
 }
 
 .elemento {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   height: 10%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .elemento .elementoTitulo {
@@ -255,7 +242,7 @@ html {
 
 .elemento img {
   height: auto;
-  width: 50px;
+  width: 3rem;
 }
 
 .elemento .elementoTexto {
@@ -277,47 +264,23 @@ html {
 }
 
 .docente {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   font-family: "DM Sans", sans-serif;
 }
 
 .docente .tarjetaDocente {
   height: 25rem;
   width: 25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   background: #23272b padding-box;
   border-radius: 10%;
 }
 
 .docente .tarjetaDocente .fotoProfe {
-  height: 150px;
-  width: 150px;
-  overflow: hidden;
-  border-radius: 50%;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.docente .tarjetaDocente .fotoProfe img {
-  height: auto;
-  width: 105%;
-  position: relative;
-  margin-top: -20px;
+  align-self: center;
 }
 
 .docente .tarjetaDocente .docenteNombre {
@@ -325,12 +288,10 @@ html {
 }
 
 .docenteBoton {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .heroNovedades {
@@ -338,7 +299,7 @@ html {
   padding-bottom: 5rem;
   height: auto;
   width: 100%;
-  background-image: url(../img/heroNovedades.jpg);
+  background-image: url("../img/novedades/heroNovedades.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
@@ -355,7 +316,7 @@ html {
 }
 
 .seccionYbNovedades {
-  background-color: #EFEFEF;
+  background-color: #efefef;
   padding: 2rem;
   padding-bottom: 8rem;
 }
@@ -370,32 +331,26 @@ html {
 }
 
 .eventos {
-  padding-top: 2rem;
+  padding-top: 4rem;
   padding-bottom: 0;
 }
 
+.eventos .eventosTitulo {
+  padding-top: 0;
+  padding-bottom: 4rem;
+}
+
 .eventos .eventosTarjeta {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding-top: 2rem;
   padding-bottom: 0;
 }
 
 .eventos .eventosTarjeta .eventosTarjetaCuerpo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-evenly;
   height: 100%;
 }
 
@@ -412,31 +367,38 @@ html {
 .eventos .eventosTarjeta .eventosTarjetaCuerpo .eventosBotonCaja {
   padding-right: 2rem;
   padding-left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  justify-content: end;
 }
 
 .eventos .eventosTarjeta .eventosTarjetaCuerpo .eventosBotonCaja .eventosBoton {
   width: 25%;
 }
 
+.eventos .eventosTarjeta .eventosTarjetaCuerpo .eventosBotonCaja .eventosBoton:hover {
+  transition: 0.2s;
+  color: #fafcfc;
+  background-color: #026c7a;
+  box-shadow: 6px 10px 10px #00000029;
+}
+
 .eventos .botonMasEventosCaja {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
 }
 
 .eventos .botonMasEventosCaja .botonMasEventos {
+  font-family: "DM Sans", sans-serif;
   width: 10%;
+}
+
+.eventos .botonMasEventosCaja .botonMasEventos:hover {
+  color: #fafcfc;
+  transition: 0.2s;
+  background-color: #15171a;
+  box-shadow: 6px 10px 10px #00000029;
 }
 
 .repositorio {
@@ -444,41 +406,40 @@ html {
   padding-bottom: 0;
 }
 
+.repositorio .repositorioTitulo {
+  padding-top: 0;
+  padding-bottom: 2rem;
+}
+
 .repositorio .repositorioTarjeta {
   padding-top: 2rem;
   padding-bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .repositorio .repositorioTarjeta .repositorioTarjetaCuerpo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .repositorio .repositorioBotonCaja {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  justify-content: center;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
 }
 
 .repositorio .repositorioBotonCaja .repositorioBoton {
   font-family: "DM Sans", sans-serif;
   width: 15%;
+}
+
+.repositorio .repositorioBotonCaja .repositorioBoton:hover {
+  color: #fafcfc;
+  transition: 0.2s;
+  background-color: #15171a;
+  box-shadow: 6px 10px 10px #00000029;
 }
 
 .snBienvenidosContainer {
@@ -487,41 +448,25 @@ html {
 }
 
 .SnNosotras, .SnMision {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
   padding: 2rem;
 }
 
 .bienvenida2Sn {
   width: 60%;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .heroContacto {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background: transparent url(../img/fondoContacto.jpg) 0% 0% no-repeat padding-box;
+  flex-direction: column;
+  background: transparent url(../img/contacto/hero.png) 0% 0% no-repeat padding-box;
   background-size: cover;
   opacity: 0.9;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .heroContacto .contactoTitulo {
@@ -549,21 +494,13 @@ html {
 }
 
 .cajaContactoRedes {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .cajaContactoRedes .contactoRedes {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .cajaContactoRedes .contactoRedes p {
@@ -573,24 +510,16 @@ html {
 }
 
 .cajaContactoRedes .contactoRedes .instagram, .cajaContactoRedes .contactoRedes .youtube, .cajaContactoRedes .contactoRedes .linkedin {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-preferred-size: 32% !important;
-      flex-basis: 32% !important;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 32% !important;
 }
 
 .preguntas {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding-top: 6rem;
+  padding-bottom: 8rem;
+  justify-content: center;
 }
 
 .preguntas .accordion .accordion-button:not(.collapsed) {
@@ -600,8 +529,7 @@ html {
 }
 
 .preguntas .accordion .accordion-button:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .preguntas .accordion .accordion-button:after {
@@ -613,6 +541,35 @@ html {
   color: #ffa443;
 }
 
+.blog1 {
+  padding-top: 0rem;
+  padding-bottom: 6rem;
+}
+
+.blog1 .blogTitulo {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.blog1 .blogContenido p {
+  padding-right: 5rem;
+  padding-left: 5rem;
+  letter-spacing: 0px;
+}
+
+.blog1 .blogContenido .fotoBlog {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.blog1 .blogContenido h5 {
+  padding-right: 5rem;
+  padding-left: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  text-align: start;
+}
+
 .footer {
   padding: 1rem;
   font-family: "DM Sans", sans-serif;
@@ -621,20 +578,18 @@ html {
 }
 
 .footer .footerDatos {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  padding-top: 2rem;
+  padding-bottom: 0rem;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .footer .footerDatos .footerSub {
-  padding-top: 2rem;
+  padding-top: 0;
   padding-bottom: 2rem;
   font-weight: normal;
   text-align: left;
+  color: #fafcfc;
 }
 
 .footer .footerDatos .footerConsultas {
@@ -649,13 +604,8 @@ html {
 .footer .redes {
   padding-top: 2rem;
   padding-bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .footer .redes p {
@@ -663,29 +613,23 @@ html {
 }
 
 .footer .redes .iconos {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  gap: 2rem;
 }
 
-.footer .redes .iconos img {
-  height: 30%;
-  width: 30%;
+.footer .redes .iconos .iconoYoutube {
+  height: 90%;
 }
 
 .footer .links {
   padding-top: 2rem;
   padding-bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .footer .links p {
+  margin: 0;
   font-size: 1.125rem;
 }
 

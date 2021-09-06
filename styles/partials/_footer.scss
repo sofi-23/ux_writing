@@ -4,11 +4,13 @@
   background-color: $negroTextos;
   color: $blanco;
   .footerDatos {
+    @include padding-X(2rem, 0rem);
     @include flexColumn;
     .footerSub {
-      @include padding-X(2rem, 2rem);
+      @include padding-X(0, 2rem);
       font-weight: normal;
       text-align: left;
+      color: $blanco;
     }
     .footerConsultas {
       opacity: 0.7;
@@ -26,8 +28,9 @@
     }
     .iconos {
       display: flex;
-      img {
-        @include sizes(30%, 30%);
+      gap: 2rem;
+      .iconoYoutube {
+        height: 90%;
       }
     }
   }
@@ -35,6 +38,7 @@
     @include padding-X(2rem, 0);
     @include flexColumn;
     p {
+      margin: 0;
       font-size: $textoTarjeta;
     }
     ul {

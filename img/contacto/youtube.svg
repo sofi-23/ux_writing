@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="105" height="101" viewBox="0 0 105 101">
+  <defs>
+    <clipPath id="clip-path">
+      <ellipse id="Elipse_23" data-name="Elipse 23" cx="52.5" cy="50.5" rx="52.5" ry="50.5" transform="translate(60.431 36.516)" fill="#fafcfc"/>
+    </clipPath>
+  </defs>
+  <g id="youtube" transform="translate(-60.431 -36.516)" clip-path="url(#clip-path)">
+    <ellipse id="Elipse_22" data-name="Elipse 22" cx="41.595" cy="43.293" rx="41.595" ry="43.293" transform="translate(71.267 43.715)" fill="#ffa443"/>
+    <path id="youtube-2" data-name="youtube" d="M46.723,6.14H12.247A12.247,12.247,0,0,0,0,18.387V35.621A12.247,12.247,0,0,0,12.247,47.869H46.723A12.247,12.247,0,0,0,58.97,35.621V18.387A12.247,12.247,0,0,0,46.723,6.14Zm-8.283,21.7L22.315,35.534a.647.647,0,0,1-.926-.584V19.087a.647.647,0,0,1,.94-.577l16.125,8.172A.647.647,0,0,1,38.44,27.843Z" transform="translate(83.376 60.004)" fill="#fafcfc"/>
+  </g>
+</svg>

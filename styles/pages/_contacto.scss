@@ -1,6 +1,6 @@
 .heroContacto {
   @include flexColumn;
-  background: transparent url(../img/fondoContacto.jpg) 0% 0% no-repeat
+  background: transparent url(../img/contacto/hero.png) 0% 0% no-repeat
     padding-box;
   background-size: cover;
   opacity: 0.9;
@@ -46,6 +46,7 @@
   }
 }
 .preguntas {
+  @include padding-X(6rem, 8rem);
   justify-content: center;
   .accordion {
     .accordion-button:not(.collapsed) {

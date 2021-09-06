@@ -1,64 +1,63 @@
 .carousel-inner {
   height: auto;
   .filtroCarrusel {
-    background: rgba(35, 39, 43, 0.50);
+    background: rgba(35, 39, 43, 0.5);
     display: block;
     position: absolute;
     top: 0;
     height: -webkit-fill-available;
     width: inherit;
-    } 
-    .texto1 {
-        width: 45%;
-      }
-    .texto3 {
-      width: 45%;
+  }
+  .texto1 {
+    width: 45%;
+  }
+  .texto3 {
+    width: 45%;
+  }
+  .textoCarrusel {
+    height: 100%;
+    margin: auto;
+
+    .tituloCarrusel {
+      margin-top: 35vh;
+      font-size: 3.125rem;
+      color: $blanco;
+      font-family: $sans;
+      font-weight: $sans-bold;
     }
-    .textoCarrusel {
-      height: 100%;
+
+    .subtituloCarrusel {
+      font-size: 2rem;
+      color: $blanco;
+      font-weight: $sans-bold;
+      font-family: $sans;
       margin: auto;
-     
-      .tituloCarrusel {
-        margin-top: 35vh;
-        font-size: 3.125rem;
-        color: $blanco;
-        font-family: $sans;
-        font-weight: $sans-bold;
-      } 
-      
-      .subtituloCarrusel {
-        font-size: 2rem;
-        color: $blanco;
-        font-weight: $sans-bold;
-        font-family: $sans;
-        margin: auto;
-      }
-      .subtitulo1 {
-        width: 80%;
-        }
-      .subtitulo2 {
-        width: 50%;
-      }
-      .botonCarrusel {
-        background: $naranjaLinks;
-        border-color: $naranjaLinks;
-        font-size: $botonesLetra;
-        color: #ffff;
-        width: 25%;
-        padding-left: 1em;
-        padding-right: 1em;
-        white-space: nowrap;
-        font-family: $sans;
-      }
-    } 
-  
+    }
+    .subtitulo1 {
+      width: 80%;
+    }
+    .subtitulo2 {
+      width: 50%;
+    }
+    .botonCarrusel {
+      background: $naranjaLinks;
+      border-color: $naranjaLinks;
+      font-size: $botonesLetra;
+      color: #ffff;
+      width: 25%;
+      padding-left: 1em;
+      padding-right: 1em;
+      white-space: nowrap;
+      font-family: $sans;
+    }
+  }
 }
 
 .indicadorCarrusel.active {
   background-color: $naranjaLinks !important;
 }
 .indicadorCarrusel {
-  height: .5rem !important;
+  height: 0.5rem !important;
 }
 
 .card {
@@ -68,7 +67,7 @@
   }
   .card-text {
     font-size: $textoTarjeta;
-    opacity: .7;
+    opacity: 0.7;
   }
   .botonCard {
     position: relative;
@@ -77,7 +76,7 @@
 }
 
 .homeSobreNosotras {
-  background-image: url("../img/sn_home.png");
+  background-image: url("../img/index/sn_home.png");
   background-repeat: no-repeat;
   background-position: center;
   padding: 0;
@@ -89,5 +88,4 @@
   .homeSnTextoContainer {
     width: 45%;
   }
-  
 }

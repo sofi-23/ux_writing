@@ -29,3 +29,19 @@
   display: flex;
   justify-content: center;
 }
+@mixin hoverCeleste {
+  &:hover {
+    transition: 0.2s;
+    color: $blanco;
+    background-color: $celesteHover;
+    box-shadow: 6px 10px 10px #00000029;
+  }
+}
+@mixin hoverNegro {
+  &:hover {
+    color: $blanco;
+    transition: 0.2s;
+    background-color: $negroHover;
+    box-shadow: 6px 10px 10px #00000029;
+  }
+}

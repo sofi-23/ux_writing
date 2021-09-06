@@ -1,7 +1,7 @@
 .heroNovedades {
   @include padding-X(5rem, 5rem);
   @include sizes(100%, auto);
-  background-image: url(../img/heroNovedades.jpg);
+  background-image: url("../img/novedades/heroNovedades.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
@@ -16,7 +16,7 @@
   color: #ffff;
 }
 .seccionYbNovedades {
-  background-color: #EFEFEF;
+  background-color: #efefef;
   padding: 2rem;
   padding-bottom: 8rem;
   .iconoYbNovedades {
@@ -29,7 +29,10 @@
 }
 
 .eventos {
-  @include padding-X(2rem, 0);
+  @include padding-X(4rem, 0);
+  .eventosTitulo {
+    @include padding-X(0, 4rem);
+  }
   .eventosTarjeta {
     @include flexJusCen;
     @include padding-X(2rem, 0);
@@ -49,20 +52,26 @@
         justify-content: end;
         .eventosBoton {
           width: 25%;
+          @include hoverCeleste;
         }
       }
     }
   }
   .botonMasEventosCaja {
     @include flexJusCen;
-    @include padding-X(2rem, 2rem);
+    @include padding-X(3rem, 6rem);
     .botonMasEventos {
+      font-family: $sans;
       width: 10%;
+      @include hoverNegro;
     }
   }
 }
 .repositorio {
   @include padding-X(2rem, 0);
+  .repositorioTitulo {
+    @include padding-X(0, 2rem);
+  }
   .repositorioTarjeta {
     @include padding-X(2rem, 0);
     @include flexJusCen;
@@ -72,10 +81,11 @@
   }
   .repositorioBotonCaja {
     @include flexJusCen;
-    @include padding-X(2rem, 2rem);
+    @include padding-X(4rem, 8rem);
     .repositorioBoton {
       font-family: $sans;
       width: 15%;
+      @include hoverNegro;
     }
   }
 }

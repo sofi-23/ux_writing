@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="94.896" height="94.897" viewBox="0 0 94.896 94.897">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Elipse_25" data-name="Elipse 25" cx="47.448" cy="47.448" r="47.448" transform="translate(137.792 43)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="linkedin" transform="translate(-137.792 -43)" clip-path="url(#clip-path)">
+    <g id="linkedin-2" data-name="linkedin" transform="translate(137.792 43)">
+      <circle id="Elipse_24" data-name="Elipse 24" cx="47.448" cy="47.448" r="47.448" transform="translate(0 0)" fill="#ffa443"/>
+      <g id="Grupo_48" data-name="Grupo 48" transform="translate(22.894 20.274)">
+        <path id="Trazado_631" data-name="Trazado 631" d="M63.037,39.965V59.527H51.7V41.276c0-4.583-1.637-7.712-5.744-7.712a6.2,6.2,0,0,0-5.817,4.147,7.762,7.762,0,0,0-.376,2.764V59.526H28.416s.152-30.911,0-34.111H39.759v4.834c-.023.038-.055.075-.075.112h.075v-.112a11.261,11.261,0,0,1,10.222-5.635c7.462,0,13.056,4.875,13.056,15.351ZM16.551,8.973c-3.88,0-6.418,2.547-6.418,5.893,0,3.275,2.465,5.9,6.269,5.9h.074c3.956,0,6.415-2.62,6.415-5.9-.075-3.346-2.46-5.893-6.34-5.893ZM10.807,59.527H22.145V25.415H10.807Z" transform="translate(-10.133 -8.973)" fill="#fafcfc"/>
+      </g>
+    </g>
+  </g>
+</svg>

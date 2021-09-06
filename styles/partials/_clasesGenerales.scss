@@ -27,8 +27,10 @@ html {
   color: $blanco;
   font-family: $sans;
   font-size: $botonesLetra;
+  @include hoverCeleste;
 }
 .botonNegro {
-  background-color: $negroTextos;
+  background-color: $grisBotones;
   color: $blanco;
+  @include hoverNegro;
 }
