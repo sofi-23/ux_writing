@@ -39,12 +39,10 @@ html {
 }
 
 .botonCeleste:hover {
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   color: #fafcfc;
   background-color: #026c7a;
-  -webkit-box-shadow: 6px 10px 10px #00000029;
-          box-shadow: 6px 10px 10px #00000029;
+  box-shadow: 6px 10px 10px #00000029;
 }
 
 .botonNegro {
@@ -54,15 +52,12 @@ html {
 
 .botonNegro:hover {
   color: #fafcfc;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   background-color: #15171a;
-  -webkit-box-shadow: 6px 10px 10px #00000029;
-          box-shadow: 6px 10px 10px #00000029;
+  box-shadow: 6px 10px 10px #00000029;
 }
 
 #header {
-  position: -webkit-sticky;
   position: sticky;
   z-index: 100;
   top: 0;
@@ -81,32 +76,22 @@ html {
 }
 
 #header .navbar .navbar-collapse {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 #header .navbar .navbar-collapse .navList {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 60%;
 }
 
 #header .navbar .navbar-collapse .navList .nav-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
 #header .navbar .navbar-collapse .navList .nav-item button {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 #header .navbar .navbar-collapse .navList .nav-item .navLink {
@@ -144,16 +129,9 @@ html {
 .carousel-inner .textoCarrusel {
   height: 100%;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .carousel-inner .textoCarrusel .tituloCarrusel {
@@ -241,15 +219,9 @@ html {
   padding: 0;
   height: 60vh;
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .homeSobreNosotras .homeSnTextoContainer {
@@ -268,12 +240,8 @@ html {
 }
 
 .informacion .informacionRow {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: end;
-      align-content: end;
+  flex-direction: column;
+  align-content: end;
 }
 
 .informacion .informacionTitulo {
@@ -294,22 +262,14 @@ html {
 .datos {
   padding-top: 3rem;
   padding-bottom: 0;
-  -webkit-box-shadow: 6px 10px 10px #00000029;
-          box-shadow: 6px 10px 10px #00000029;
+  box-shadow: 6px 10px 10px #00000029;
 }
 
 .elemento {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   height: 10%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .elemento .elementoTitulo {
@@ -341,36 +301,23 @@ html {
 }
 
 .docente {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   font-family: "DM Sans", sans-serif;
 }
 
 .docente .tarjetaDocente {
   height: 25rem;
   width: 25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   background: #23272b padding-box;
   border-radius: 10%;
 }
 
 .docente .tarjetaDocente .fotoProfe {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 .docente .tarjetaDocente .docenteNombre {
@@ -380,12 +327,8 @@ html {
 .docenteBoton {
   padding-top: 3rem;
   padding-bottom: 6rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .heroNovedades {
@@ -425,27 +368,16 @@ html {
 }
 
 .eventos .eventosTarjeta {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding-top: 2rem;
   padding-bottom: 0;
 }
 
 .eventos .eventosTarjeta .eventosTarjetaCuerpo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-evenly;
   height: 100%;
 }
 
@@ -462,12 +394,8 @@ html {
 .eventos .eventosTarjeta .eventosTarjetaCuerpo .eventosBotonCaja {
   padding-right: 2rem;
   padding-left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  justify-content: end;
 }
 
 .eventos .eventosTarjeta .eventosTarjetaCuerpo .eventosBotonCaja .eventosBoton {
@@ -475,12 +403,8 @@ html {
 }
 
 .eventos .botonMasEventosCaja {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -497,31 +421,18 @@ html {
 .repositorio .repositorioTarjeta {
   padding-top: 2rem;
   padding-bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .repositorio .repositorioTarjeta .repositorioTarjetaCuerpo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .repositorio .repositorioBotonCaja {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -542,112 +453,87 @@ html {
 }
 
 .snMainContainer .SnNosotras, .snMainContainer .SnMision {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
   padding: 2rem;
 }
 
 .snMainContainer .bienvenida2Sn {
   width: 60%;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .heroContacto {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   background: transparent url(../img/contacto/hero.png) 0% 0% no-repeat padding-box;
   background-size: cover;
   opacity: 0.9;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .heroContacto .contactoTitulo {
-  padding-top: 2em;
-  padding-bottom: 0;
   font-size: 2rem;
+  padding-top: 0;
+  padding-bottom: 1.5rem;
 }
 
 .heroContacto .titulo, .heroContacto .subtitulo {
   color: #fafcfc;
+  margin: 0;
 }
 
 .heroContacto .contactoMail {
+  padding-top: 0;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #fafcfc;
-  text-align: center;
+  text-decoration: none;
 }
 
-.heroContacto img {
-  height: auto;
-  width: 10%;
-}
-
-.heroContacto .contactoImagen {
+.heroContacto .contactoMail .contactoImagen {
   width: 5rem;
 }
 
 .cajaContactoRedes {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
+  padding-top: 4rem;
+  padding-bottom: 0;
 }
 
 .cajaContactoRedes .contactoRedes {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.cajaContactoRedes .contactoRedes p {
-  font-family: "DM Sans", sans-serif;
-  font-weight: 700;
-  font-size: 1.25rem;
+  justify-content: center;
 }
 
 .cajaContactoRedes .contactoRedes .instagram, .cajaContactoRedes .contactoRedes .youtube, .cajaContactoRedes .contactoRedes .linkedin {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-preferred-size: 32% !important;
-      flex-basis: 32% !important;
+  flex-direction: column;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  flex-basis: 32% !important;
+  align-items: center;
+  text-decoration: none;
+}
+
+.cajaContactoRedes .contactoRedes .instagram p, .cajaContactoRedes .contactoRedes .youtube p, .cajaContactoRedes .contactoRedes .linkedin p {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #23272b;
 }
 
 .preguntas {
   padding-top: 6rem;
   padding-bottom: 8rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .preguntas .accordion .accordion-button:not(.collapsed) {
@@ -657,8 +543,7 @@ html {
 }
 
 .preguntas .accordion .accordion-button:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .preguntas .accordion .accordion-button:after {
@@ -709,13 +594,8 @@ html {
 .footer .footerDatos {
   padding-top: 2rem;
   padding-bottom: 0rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .footer .footerDatos .footerSub {
@@ -727,6 +607,7 @@ html {
 }
 
 .footer .footerDatos .footerConsultas {
+  margin: 0;
   opacity: 0.7;
 }
 
@@ -738,13 +619,8 @@ html {
 .footer .redes {
   padding-top: 2rem;
   padding-bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .footer .redes p {
@@ -752,8 +628,6 @@ html {
 }
 
 .footer .redes .iconos {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 2rem;
 }
@@ -765,13 +639,8 @@ html {
 .footer .links {
   padding-top: 2rem;
   padding-bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .footer .links p {

@@ -1,4 +1,5 @@
 .heroContacto {
+  @include padding-X(4rem, 4rem);
   @include flexColumn;
   background: transparent url(../img/contacto/hero.png) 0% 0% no-repeat
     padding-box;
@@ -6,36 +7,42 @@
   opacity: 0.9;
   align-items: center;
   .contactoTitulo {
-    @include padding-X(2em, 0);
     font-size: 2rem;
+    @include padding-X(0, 1.5rem);
   }
   .titulo {
     color: $blanco;
+    margin: 0;
   }
   .contactoMail {
+    @include padding-X(0, 1rem);
+    @include flexColumn;
+    align-items: center;
     color: $blanco;
-    text-align: center;
-  }
-  img {
-    @include sizes(10%, auto);
-  }
-  .contactoImagen {
-    width: 5rem;
+    text-decoration: none;
+
+    .contactoImagen {
+      width: 5rem;
+    }
   }
 }
 .cajaContactoRedes {
   @include flexJusCen;
+  @include padding-X(4rem, 0);
   .contactoRedes {
     @include flexJusCen;
-    p {
-      font-family: $sans;
-      font-weight: $sans-bold;
-      font-size: $texto;
-    }
     .instagram {
       @include flexColumn;
-      align-items: center;
+      @include margin-Y(2rem, 2rem);
       flex-basis: 32% !important;
+      align-items: center;
+      text-decoration: none;
+      p {
+        font-family: $sans;
+        font-weight: $sans-bold;
+        font-size: $texto;
+        color: $negroTextos;
+      }
     }
     .youtube {
       @extend .instagram;
