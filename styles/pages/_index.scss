@@ -1,79 +1,92 @@
 .carousel-inner {
   height: auto;
   .filtroCarrusel {
-    background: rgba(35, 39, 43, 0.5);
+    background: rgba(35, 39, 43, 0.50);
     display: block;
     position: absolute;
     top: 0;
     height: -webkit-fill-available;
     width: inherit;
-  }
-  .texto1 {
-    width: 45%;
-  }
-  .texto3 {
-    width: 45%;
-  }
-  .textoCarrusel {
-    height: 100%;
-    margin: auto;
-
-    .tituloCarrusel {
-      margin-top: 35vh;
-      font-size: 3.125rem;
-      color: $blanco;
-      font-family: $sans;
-      font-weight: $sans-bold;
+    } 
+    .texto1 {
+        width: 45%;
+      }
+    .texto3 {
+      width: 45%;
     }
-
-    .subtituloCarrusel {
-      font-size: 2rem;
-      color: $blanco;
-      font-weight: $sans-bold;
-      font-family: $sans;
+    .textoCarrusel {
+      height: 100%;
       margin: auto;
-    }
-    .subtitulo1 {
-      width: 80%;
-    }
-    .subtitulo2 {
-      width: 50%;
-    }
-    .botonCarrusel {
-      background: $naranjaLinks;
-      border-color: $naranjaLinks;
-      font-size: $botonesLetra;
-      color: #ffff;
-      width: 25%;
-      padding-left: 1em;
-      padding-right: 1em;
-      white-space: nowrap;
-      font-family: $sans;
-    }
-  }
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .tituloCarrusel {
+        margin-top: 35vh;
+        font-size: 3.125rem;
+        color: $blanco;
+        font-family: $sans;
+        font-weight: $sans-bold;
+        line-height: 1.4;
+      } 
+      
+      .subtituloCarrusel {
+        font-size: 2rem;
+        color: $blanco;
+        font-weight: $sans-bold;
+        font-family: $sans;
+        margin: auto;
+        line-height: 1.35;
+      }
+      .subtitulo1 {
+        width: 80%;
+        }
+      .subtitulo2 {
+        width: 50%;
+      }
+      .botonCarrusel {
+        background: $naranjaLinks;
+        border-color: $naranjaLinks;
+        font-size: $botonesLetra;
+        color: #ffff;
+        padding-left: 1em;
+        width: 12.18rem;
+        margin-top: 2.5rem;
+        height: 2.3rem;
+        padding-right: 1em;
+        white-space: nowrap;
+        font-family: $sans;
+      }
+    } 
+  
 }
 
 .indicadorCarrusel.active {
   background-color: $naranjaLinks !important;
 }
 .indicadorCarrusel {
-  height: 0.5rem !important;
+  height: .5rem !important;
+  margin-bottom: 3rem !important;
 }
 
-.card {
-  font-family: $sans;
-  .card-title {
-    font-size: $subtitulo;
-  }
-  .card-text {
-    font-size: $textoTarjeta;
-    opacity: 0.7;
-  }
-  .botonCard {
-    position: relative;
-    left: 10rem;
+.homeCursos {
+  margin-bottom: 8rem;
+  margin-top: 5rem;
+    .card {
+    font-family: $sans;
+    .card-title {
+      font-size: $subtitulo;
+    }
+    .card-text {
+      font-size: $textoTarjeta;
+      opacity: .7;
+    }
+    .botonCard {
+      position: relative;
+      left: 10rem;
+    }
   }
 }
+
 
 .homeSobreNosotras {
   background-image: url("../img/index/sn_home.png");
@@ -88,4 +101,5 @@
   .homeSnTextoContainer {
     width: 45%;
   }
+  
 }
