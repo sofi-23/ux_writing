@@ -39,10 +39,12 @@ html {
 }
 
 .botonCeleste:hover {
+  -webkit-transition: 0.2s;
   transition: 0.2s;
   color: #fafcfc;
   background-color: #026c7a;
-  box-shadow: 6px 10px 10px #00000029;
+  -webkit-box-shadow: 6px 10px 10px #00000029;
+          box-shadow: 6px 10px 10px #00000029;
 }
 
 .botonNegro {
@@ -52,31 +54,62 @@ html {
 
 .botonNegro:hover {
   color: #fafcfc;
+  -webkit-transition: 0.2s;
   transition: 0.2s;
   background-color: #15171a;
-  box-shadow: 6px 10px 10px #00000029;
+  -webkit-box-shadow: 6px 10px 10px #00000029;
+          box-shadow: 6px 10px 10px #00000029;
 }
 
-.navbar {
+#header {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+}
+
+#header .navbar {
   background: #2e2c2d;
 }
 
-.navbar .navbar-collapse {
-  justify-content: flex-end;
+#header .navbar .dropdown-menu {
+  background: #2e2c2d;
 }
 
-.navbar .navbar-collapse .navList {
-  justify-content: space-between;
+#header .navbar .dropdown-menu a {
+  color: #fafcfc;
+}
+
+#header .navbar .navbar-collapse {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#header .navbar .navbar-collapse .navList {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 60%;
 }
 
-.navbar .navbar-collapse .navList .nav-item {
+#header .navbar .navbar-collapse .navList .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
-.navbar .navbar-collapse .navList .nav-item .navLink {
+#header .navbar .navbar-collapse .navList .nav-item button {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#header .navbar .navbar-collapse .navList .nav-item .navLink {
   font-size: 1.125rem;
   text-decoration: none;
   color: #fafcfc;
@@ -111,6 +144,16 @@ html {
 .carousel-inner .textoCarrusel {
   height: 100%;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .carousel-inner .textoCarrusel .tituloCarrusel {
@@ -119,6 +162,7 @@ html {
   color: #fafcfc;
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
+  line-height: 1.4;
 }
 
 .carousel-inner .textoCarrusel .subtituloCarrusel {
@@ -127,6 +171,7 @@ html {
   font-weight: 700;
   font-family: "DM Sans", sans-serif;
   margin: auto;
+  line-height: 1.35;
 }
 
 .carousel-inner .textoCarrusel .subtitulo1 {
@@ -142,11 +187,19 @@ html {
   border-color: #ffa443;
   font-size: 1rem;
   color: #ffff;
-  width: 25%;
   padding-left: 1em;
+  width: 12.18rem;
+  margin-top: 2.5rem;
+  height: 2.3rem;
   padding-right: 1em;
   white-space: nowrap;
   font-family: "DM Sans", sans-serif;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 30px;
+  height: 8px;
+  border-radius: 12px;
 }
 
 .indicadorCarrusel.active {
@@ -154,23 +207,29 @@ html {
 }
 
 .indicadorCarrusel {
-  height: 0.5rem !important;
+  height: .5rem !important;
+  margin-bottom: 3rem !important;
 }
 
-.card {
+.homeCursos {
+  margin-bottom: 8rem;
+  margin-top: 5rem;
+}
+
+.homeCursos .card {
   font-family: "DM Sans", sans-serif;
 }
 
-.card .card-title {
+.homeCursos .card .card-title {
   font-size: 1.5rem;
 }
 
-.card .card-text {
+.homeCursos .card .card-text {
   font-size: 1.125rem;
-  opacity: 0.7;
+  opacity: .7;
 }
 
-.card .botonCard {
+.homeCursos .card .botonCard {
   position: relative;
   left: 10rem;
 }
@@ -182,9 +241,15 @@ html {
   padding: 0;
   height: 60vh;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .homeSobreNosotras .homeSnTextoContainer {
@@ -203,8 +268,12 @@ html {
 }
 
 .informacion .informacionRow {
-  flex-direction: column;
-  align-content: end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: end;
+      align-content: end;
 }
 
 .informacion .informacionTitulo {
@@ -225,14 +294,22 @@ html {
 .datos {
   padding-top: 3rem;
   padding-bottom: 0;
-  box-shadow: 6px 10px 10px #00000029;
+  -webkit-box-shadow: 6px 10px 10px #00000029;
+          box-shadow: 6px 10px 10px #00000029;
 }
 
 .elemento {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 10%;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .elemento .elementoTitulo {
@@ -264,23 +341,36 @@ html {
 }
 
 .docente {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: "DM Sans", sans-serif;
 }
 
 .docente .tarjetaDocente {
   height: 25rem;
   width: 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: #23272b padding-box;
   border-radius: 10%;
 }
 
 .docente .tarjetaDocente .fotoProfe {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .docente .tarjetaDocente .docenteNombre {
@@ -290,8 +380,12 @@ html {
 .docenteBoton {
   padding-top: 3rem;
   padding-bottom: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .heroNovedades {
@@ -299,15 +393,10 @@ html {
   padding-bottom: 5rem;
   height: auto;
   width: 100%;
-  background-image: url("../img/novedades/heroNovedades.jpg");
+  background-image: url(../img/heroNovedades.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
-  opacity: 0.3;
-}
-
-.heroNovedades .heroNovedadesTitulo {
-  opacity: 1 !important;
 }
 
 .botonBlog {
@@ -316,7 +405,7 @@ html {
 }
 
 .seccionYbNovedades {
-  background-color: #efefef;
+  background-color: #EFEFEF;
   padding: 2rem;
   padding-bottom: 8rem;
 }
@@ -331,26 +420,32 @@ html {
 }
 
 .eventos {
-  padding-top: 4rem;
+  padding-top: 2rem;
   padding-bottom: 0;
 }
 
-.eventos .eventosTitulo {
-  padding-top: 0;
-  padding-bottom: 4rem;
-}
-
 .eventos .eventosTarjeta {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 2rem;
   padding-bottom: 0;
 }
 
 .eventos .eventosTarjeta .eventosTarjetaCuerpo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   height: 100%;
 }
 
@@ -367,38 +462,31 @@ html {
 .eventos .eventosTarjeta .eventosTarjetaCuerpo .eventosBotonCaja {
   padding-right: 2rem;
   padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 .eventos .eventosTarjeta .eventosTarjetaCuerpo .eventosBotonCaja .eventosBoton {
   width: 25%;
 }
 
-.eventos .eventosTarjeta .eventosTarjetaCuerpo .eventosBotonCaja .eventosBoton:hover {
-  transition: 0.2s;
-  color: #fafcfc;
-  background-color: #026c7a;
-  box-shadow: 6px 10px 10px #00000029;
-}
-
 .eventos .botonMasEventosCaja {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  padding-top: 3rem;
-  padding-bottom: 6rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .eventos .botonMasEventosCaja .botonMasEventos {
-  font-family: "DM Sans", sans-serif;
   width: 10%;
-}
-
-.eventos .botonMasEventosCaja .botonMasEventos:hover {
-  color: #fafcfc;
-  transition: 0.2s;
-  background-color: #15171a;
-  box-shadow: 6px 10px 10px #00000029;
 }
 
 .repositorio {
@@ -406,28 +494,36 @@ html {
   padding-bottom: 0;
 }
 
-.repositorio .repositorioTitulo {
-  padding-top: 0;
-  padding-bottom: 2rem;
-}
-
 .repositorio .repositorioTarjeta {
   padding-top: 2rem;
   padding-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .repositorio .repositorioTarjeta .repositorioTarjetaCuerpo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .repositorio .repositorioBotonCaja {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  padding-top: 4rem;
-  padding-bottom: 8rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .repositorio .repositorioBotonCaja .repositorioBoton {
@@ -435,38 +531,52 @@ html {
   width: 15%;
 }
 
-.repositorio .repositorioBotonCaja .repositorioBoton:hover {
-  color: #fafcfc;
-  transition: 0.2s;
-  background-color: #15171a;
-  box-shadow: 6px 10px 10px #00000029;
+.snMainContainer {
+  margin-top: 6.4rem;
+  margin-bottom: 4.8rem;
 }
 
-.snBienvenidosContainer {
+.snMainContainer .snBienvenidosContainer {
   width: 60%;
   margin: auto;
 }
 
-.SnNosotras, .SnMision {
-  justify-content: space-evenly;
+.snMainContainer .SnNosotras, .snMainContainer .SnMision {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   padding: 2rem;
 }
 
-.bienvenida2Sn {
+.snMainContainer .bienvenida2Sn {
   width: 60%;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .heroContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: transparent url(../img/contacto/hero.png) 0% 0% no-repeat padding-box;
   background-size: cover;
   opacity: 0.9;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .heroContacto .contactoTitulo {
@@ -494,13 +604,21 @@ html {
 }
 
 .cajaContactoRedes {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .cajaContactoRedes .contactoRedes {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .cajaContactoRedes .contactoRedes p {
@@ -510,16 +628,26 @@ html {
 }
 
 .cajaContactoRedes .contactoRedes .instagram, .cajaContactoRedes .contactoRedes .youtube, .cajaContactoRedes .contactoRedes .linkedin {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-basis: 32% !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 32% !important;
+      flex-basis: 32% !important;
 }
 
 .preguntas {
   padding-top: 6rem;
   padding-bottom: 8rem;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .preguntas .accordion .accordion-button:not(.collapsed) {
@@ -529,7 +657,8 @@ html {
 }
 
 .preguntas .accordion .accordion-button:focus {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .preguntas .accordion .accordion-button:after {
@@ -580,8 +709,13 @@ html {
 .footer .footerDatos {
   padding-top: 2rem;
   padding-bottom: 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footer .footerDatos .footerSub {
@@ -604,8 +738,13 @@ html {
 .footer .redes {
   padding-top: 2rem;
   padding-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footer .redes p {
@@ -613,6 +752,8 @@ html {
 }
 
 .footer .redes .iconos {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 2rem;
 }
@@ -624,8 +765,13 @@ html {
 .footer .links {
   padding-top: 2rem;
   padding-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footer .links p {

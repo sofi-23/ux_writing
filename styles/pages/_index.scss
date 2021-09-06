@@ -8,6 +8,7 @@
     height: -webkit-fill-available;
     width: inherit;
     } 
+
     .texto1 {
         width: 45%;
       }
@@ -58,6 +59,12 @@
       }
     } 
   
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 30px;
+  height: 8px;
+  border-radius: 12px;
 }
 
 .indicadorCarrusel.active {

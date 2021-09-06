@@ -20,6 +20,9 @@
           display: flex;
           align-items: center;
           flex-wrap: nowrap;
+          button {
+            box-shadow:none;
+          }
           .navLink {
             font-size: $textoTarjeta;
             text-decoration: none;
