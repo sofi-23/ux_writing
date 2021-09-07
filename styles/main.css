@@ -728,6 +728,23 @@ html {
   }
 }
 
+.blog1 .progress-container {
+  position: sticky;
+  z-index: 100;
+  top: 80px;
+  position: sticky;
+  z-index: 100;
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+.blog1 .progress-bar {
+  height: 8px;
+  background: #ffa443;
+  width: 0%;
+}
+
 .blog1 .blogTitulo {
   padding-top: 4rem;
   padding-bottom: 4rem;
