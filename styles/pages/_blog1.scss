@@ -23,7 +23,7 @@
       }
     }
   }
-  .progress-container {
+  .progressContainer {
     position: sticky;
     z-index: 100;
     top: 80px;
@@ -33,7 +33,7 @@
     height: 8px;
     background: #ccc;
   }
-  .progress-bar {
+  .progressBar {
     height: 8px;
     background: $naranjaLinks;
     width: 0%;

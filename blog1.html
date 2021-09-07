@@ -139,10 +139,9 @@
       <div class="blog1">
         <div class="container-fluid hero">
         </div>       
-        <div class="progress-container">
-          <div class="progress-bar" id="myBar"></div>
+        <div class="progressContainer">
+          <div class="progressBar" id="blogBar"></div>
         </div>
-        <div class="barraProgreso"></div>
         <div class="blog">
           <div class="blogTitulo">
             <h3 class="titulo">Blog</h3>
@@ -258,7 +257,7 @@
         var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
         var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         var scrolled = (winScroll / height) * 100;
-        document.getElementById("myBar").style.width = scrolled + "%";
+        document.getElementById("blogBar").style.width = scrolled + "%";
       }</script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"

@@ -728,7 +728,7 @@ html {
   }
 }
 
-.blog1 .progress-container {
+.blog1 .progressContainer {
   position: sticky;
   z-index: 100;
   top: 80px;
@@ -739,7 +739,7 @@ html {
   background: #ccc;
 }
 
-.blog1 .progress-bar {
+.blog1 .progressBar {
   height: 8px;
   background: #ffa443;
   width: 0%;
