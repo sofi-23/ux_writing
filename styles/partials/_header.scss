@@ -7,21 +7,20 @@
     .dropdown-menu {
       background: $grisNav;
       a {
-      
-      color: $blanco;
+        color: $blanco;
       }
-      }
+    }
     .navbar-collapse {
       justify-content: flex-end;
       .navList {
         justify-content: space-between;
-        width: 60%;
+        gap: 2rem;
         .nav-item {
           display: flex;
           align-items: center;
           flex-wrap: nowrap;
           button {
-            box-shadow:none;
+            box-shadow: none;
           }
           .navLink {
             font-size: $textoTarjeta;
@@ -37,4 +36,4 @@
       }
     }
   }
-} 
+}

@@ -1,32 +1,106 @@
 .informacion {
-  @include padding-X(5rem, 5rem);
+  @include padding-X(2rem, 2rem);
   @include sizes(100%, auto);
-  background-image: url(../img/cursos/shape.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: center;
+  min-height: 30rem;
+  background-color: #2b2f36;
+  @media (min-width: 768px) {
+    & {
+      @include padding-X(3rem, 3rem);
+      background-position-x: right;
+    }
+  }
+  display: flex;
+  @media (min-width: 992px) {
+    & {
+      background-image: url(../img/cursos/shape.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fix;
+      background-position-x: center;
+      background-position-y: center;
+      @include padding-X(2rem, 2rem);
+    }
+  }
+  @media (min-width: 1200px) {
+    & {
+      @include padding-X(3rem, 2rem);
+    }
+  }
   .informacionRow {
     flex-direction: column;
-    align-content: end;
+    align-items: flex-end;
+    align-self: center;
+    @include padding-Y(1rem, 1rem);
+    @media (min-width: 768px) {
+      & {
+        @include padding-Y(4rem, 4rem);
+      }
+    }
+    @media (min-width: 992px) {
+      & {
+        @include padding-Y(4rem, 2rem);
+      }
+    }
+    .informacionRowTexto {
+      @include flexColumn;
+      align-items: center;
+      .informacionTitulo {
+        @include padding-X(0, 1rem);
+        color: $blanco;
+      }
+      p {
+        color: $blanco;
+        text-align: center;
+        @media (min-width: 992px) {
+          & {
+            text-align: start;
+          }
+        }
+      }
+    }
+    .informacionBotones {
+      @include padding-X(1rem, 0);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      @media (min-width: 768px) {
+        & {
+          justify-content: center;
+          flex-direction: row;
+          gap: 1rem;
+          @include padding-X(3rem, 0);
+        }
+      }
+      @media (min-width: 992px) {
+        & {
+          justify-content: center;
+          gap: 4rem;
+        }
+      }
+      a {
+        width: 80%;
+        @media (min-width: 576px) {
+          & {
+            width: 60%;
+          }
+        }
+        @media (min-width: 768px) {
+          & {
+            width: 30%;
+          }
+        }
+      }
+    }
   }
-  .informacionTitulo {
-    color: $blanco;
-  }
-  p {
-    @include padding-Y(10rem, 10rem);
-    color: $blanco;
-  }
-}
-.informacionBotones {
-  @include padding-X(3rem, 0);
 }
 .datos {
   @include padding-X(3rem, 0);
   box-shadow: 6px 10px 10px #00000029;
 }
 .elemento {
+  @include padding-X(0, 2rem);
   @include flexColumn;
-  height: 10%;
   align-items: center;
   .elementoTitulo {
     text-align: center;
@@ -36,7 +110,7 @@
     @include sizes(3rem, auto);
   }
   .elementoTexto {
-    @include padding-X(1em, 0);
+    @include padding-X(1rem, 0);
     font-size: $texto;
     color: $textoGris;
     text-align: center;
@@ -44,10 +118,18 @@
 }
 
 .requisitosYdirigido {
-  @include padding-X(5rem, 5rem);
+  @include padding-X(3rem, 2rem);
 }
 .requisitos {
-  @include padding-Y(5rem, 5rem);
+  @include padding-X(1rem, 1rem);
+  @media (min-width: 768px) {
+    & {
+      @include padding-X(2rem, 2rem);
+    }
+  }
+  .titulo {
+    @include padding-X(0, 1rem);
+  }
 }
 .dirigido {
   @extend .requisitos;
@@ -56,11 +138,14 @@
   @include flexJusCen;
   font-family: $sans;
   .tarjetaDocente {
-    @include sizes(25rem, 25rem);
+    @include sizes(20rem, 20rem);
     @include flexColumn;
     justify-content: center;
     background: $negroTextos padding-box;
     border-radius: 10%;
+    @media (min-width: 768px) {
+      @include sizes(25rem, 25rem);
+    }
     .fotoProfe {
       align-self: center;
     }
@@ -70,6 +155,9 @@
   }
 }
 .docenteBoton {
-  @include padding-X(3rem, 6rem);
+  @include padding-X(2rem, 2rem);
   @include flexJusCen;
+  @media (min-width: 768px) {
+    @include padding-X(3rem, 6rem);
+  }
 }

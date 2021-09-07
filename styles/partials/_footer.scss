@@ -3,54 +3,142 @@
   font-family: $sans;
   background-color: $negroTextos;
   color: $blanco;
-  .footerDatos {
-    @include padding-X(2rem, 0rem);
-    @include flexColumn;
-    .footerSub {
-      @include padding-X(0, 2rem);
-      font-weight: normal;
-      text-align: left;
-      color: $blanco;
-    }
-    .footerConsultas {
-      margin: 0;
-      opacity: 0.7;
-    }
-  }
-  a {
-    text-decoration: none;
-    color: $colorMail;
-  }
-  .redes {
-    @include padding-X(2rem, 0);
-    @include flexColumn;
-    p {
-      font-size: $textoTarjeta;
-    }
-    .iconos {
-      display: flex;
-      gap: 2rem;
-      .iconoYoutube {
-        height: 90%;
+  .info {
+    justify-content: center;
+    .footerDatos {
+      @include padding-X(2rem, 0rem);
+      @include flexColumn;
+      a {
+        text-decoration: none;
+        color: $colorMail;
+        text-align: center;
+        @media (min-width: 768px) {
+          & {
+            text-align: start;
+          }
+        }
+      }
+      .footerLogo {
+        @include padding-X(0, 2rem);
+        font-size: 2rem;
+        font-weight: normal;
+        text-align: left;
+        text-align: center;
+        color: $blanco;
+        @media (min-width: 768px) {
+          & {
+            font-size: 1.5rem;
+            text-align: start;
+            @include padding-X(0, 2rem);
+          }
+        }
+      }
+      .footerConsultas {
+        margin: 0;
+        text-align: center;
+        opacity: 0.7;
+        @media (min-width: 768px) {
+          & {
+            text-align: start;
+          }
+        }
       }
     }
-  }
-  .links {
-    @include padding-X(2rem, 0);
-    @include flexColumn;
-    p {
-      margin: 0;
-      font-size: $textoTarjeta;
+
+    .redes {
+      @include padding-X(2rem, 0rem);
+      @include flexColumn;
+      align-items: center;
+      gap: 0;
+      @media (min-width: 768px) {
+        & {
+          @include padding-X(2rem, 2rem);
+          gap: 1rem;
+          align-items: flex-start;
+        }
+      }
+      p {
+        margin: 0;
+        font-size: $textoTarjeta;
+      }
+      .iconos {
+        display: flex;
+        gap: 2rem;
+        @media (min-width: 768px) {
+          & {
+            gap: 1rem;
+          }
+        }
+        @media (min-width: 992px) {
+          & {
+            gap: 2rem;
+          }
+        }
+        .iconoYoutube {
+          height: 90%;
+        }
+      }
     }
-    ul {
-      list-style: none;
-      padding: 0;
-      a {
-        color: $naranjaLinks;
+    .links {
+      @include padding-X(2rem, 2rem);
+      @include flexColumn;
+      align-items: center;
+      @media (min-width: 768px) {
+        & {
+          align-items: flex-start;
+        }
+      }
+      p {
+        margin: 0;
+        font-size: $textoTarjeta;
+      }
+      ul {
+        @include flexColumn;
+        list-style: none;
+        padding: 0;
+        align-items: center;
+        @media (min-width: 768px) {
+          & {
+            align-items: flex-start;
+          }
+        }
+        a {
+          text-align: center;
+          text-decoration: none;
+          color: $naranjaLinks;
+          @media (min-width: 768px) {
+            & {
+              text-align: end;
+            }
+          }
+        }
       }
     }
   }
   .copyright {
     opacity: 0.7;
+    .terminos {
+      p {
+        text-align: center;
+      }
+      @media (min-width: 768px) {
+        & p {
+          text-align: start;
+        }
+      }
+    }
+    .derechos {
+      @extend .terminos;
+      @media (min-width: 768px) {
+        & p {
+          text-align: end;
+        }
+      }
+      @media (min-width: 992px) {
+        & p {
+          text-align: center;
+        }
+      }
+    }
   }
 }

@@ -1,7 +1,8 @@
 .heroNovedades {
-  @include padding-X(5rem, 5rem);
+  @include padding-X(4rem, 4rem);
   @include sizes(100%, auto);
-  background-image: url(../img/heroNovedades.png);
+  top: 20px;
+  background-image: url("../img/novedades/heroNovedades.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
@@ -12,7 +13,7 @@
   color: #ffff;
 }
 .seccionYbNovedades {
-  background-color: #EFEFEF;
+  background-color: #efefef;
   padding: 2rem;
   padding-bottom: 8rem;
   .iconoYbNovedades {
@@ -26,6 +27,9 @@
 
 .eventos {
   @include padding-X(2rem, 0);
+  h4 {
+    @include padding-X(3.5rem, 2rem);
+  }
   .eventosTarjeta {
     @include flexJusCen;
     @include padding-X(2rem, 0);
