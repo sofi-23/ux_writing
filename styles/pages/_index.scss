@@ -9,12 +9,7 @@
     width: inherit;
     } 
 
-    .texto1 {
-        width: 45%;
-      }
-    .texto3 {
-      width: 45%;
-    }
+   
     .textoCarrusel {
       height: 100%;
       margin: auto;
@@ -22,7 +17,7 @@
       flex-direction: column;
       justify-content: center;
       .tituloCarrusel {
-        margin-top: 35vh;
+        margin-top: 5rem;
         font-size: 3.125rem;
         color: $blanco;
         font-family: $sans;
@@ -38,12 +33,7 @@
         margin: auto;
         line-height: 1.35;
       }
-      .subtitulo1 {
-        width: 80%;
-        }
-      .subtitulo2 {
-        width: 50%;
-      }
+      
       .botonCarrusel {
         background: $naranjaLinks;
         border-color: $naranjaLinks;
@@ -56,6 +46,10 @@
         padding-right: 1em;
         white-space: nowrap;
         font-family: $sans;
+        &:hover {
+          background: #fc8200;
+          transition: .2s;
+        }
       }
     } 
   
@@ -70,14 +64,11 @@
 .indicadorCarrusel.active {
   background-color: $naranjaLinks !important;
 }
-.indicadorCarrusel {
-  height: .5rem !important;
-  margin-bottom: 3rem !important;
-}
+
 
 .homeCursos {
-  margin-bottom: 8rem;
-  margin-top: 5rem;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
     .card {
     font-family: $sans;
     .card-title {
@@ -87,10 +78,7 @@
       font-size: $textoTarjeta;
       opacity: .7;
     }
-    .botonCard {
-      position: relative;
-      left: 10rem;
-    }
+  
   }
 }
 
@@ -100,13 +88,71 @@
   background-repeat: no-repeat;
   background-position: center;
   padding: 0;
-  height: 60vh;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  .homeSnTextoContainer {
+}
+
+@media (max-width: 768px) {
+  .snContainer {
+    padding: 2rem ;
+      .titulo {
+        margin-bottom: 1rem;
+      }
+    } 
+  .indicadorCarrusel {
+    height: 4px !important;
+    width: 15px !important;
+  } 
+}
+
+
+
+@media (max-width: 992px) {
+  .tituloCarrusel {
+    margin-top: 20% !important;
+    font-size: 2rem !important;
+  }
+  .subtituloCarrusel {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (min-width:992px) {
+    .tituloCarrusel {
+    margin-top: 40% !important;
+  }
+  .texto1 {
     width: 45%;
   }
+  .texto3 {
+    width: 45%;
+  }
+  .subtitulo1 {
+    width: 80%;
+    }
+  .subtitulo2 {
+    width: 50%;
+  }
+  .homeCursos {
+    margin-top: 5rem;
+  }
+  .carousel-indicators {
+    bottom: 2rem !important;
+  }
   
+  .botonCard {
+    position: relative;
+    left: 10rem;
+  }
+  .homeSobreNosotras {
+    height: 60vh;  
+    .homeSnTextoContainer {
+    width: 45%;
+  }
+  }
+  .homeCursos {
+    margin-bottom: 8rem;
+  }
 }

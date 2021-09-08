@@ -8,6 +8,9 @@
       background: $grisNav;
       a {
         color: $blanco;
+        &:hover {
+          color: $negroTextos;
+        }
       }
     }
     .navbar-collapse {
@@ -27,13 +30,34 @@
             text-decoration: none;
             color: $blanco;
             opacity: 0.7;
+            padding: .8rem;
             white-space: nowrap;
             font-family: $sans;
             text-align: center;
             font-weight: 400;
+            &:hover {
+              color: #ffff;
+              transition: .3s;
+            }
           }
         }
       }
     }
   }
+}
+
+
+@media (max-width: 768px) {
+    .navList {
+      align-items: center;
+      .navToggler {
+        padding: 0;
+        padding-left: 1.5rem;
+        }
+      }
+      .navbar-toggler {
+              &:hover {
+                box-shadow: none;
+              }
+      } 
 }
