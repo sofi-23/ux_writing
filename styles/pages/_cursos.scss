@@ -2,14 +2,16 @@
   @include padding-X(2rem, 2rem);
   @include sizes(100%, auto);
   min-height: 30rem;
-  background-color: #2b2f36;
+  display: flex;
+  background-image: url(../img/cursos/shapeMobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   @media (min-width: 768px) {
     & {
       @include padding-X(3rem, 3rem);
       background-position-x: right;
     }
   }
-  display: flex;
   @media (min-width: 992px) {
     & {
       background-image: url(../img/cursos/shape.png);
@@ -79,17 +81,7 @@
         }
       }
       a {
-        width: 80%;
-        @media (min-width: 576px) {
-          & {
-            width: 60%;
-          }
-        }
-        @media (min-width: 768px) {
-          & {
-            width: 30%;
-          }
-        }
+        width: 200px;
       }
     }
   }
@@ -159,5 +151,8 @@
   @include flexJusCen;
   @media (min-width: 768px) {
     @include padding-X(3rem, 6rem);
+  }
+  a {
+    width: 100px;
   }
 }

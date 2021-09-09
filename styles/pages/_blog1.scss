@@ -6,7 +6,7 @@
     background-position-y: center;
     background-position-x: center;
     width: 100%;
-    height: 14vh;
+    height: 17vh;
     @media (min-width: 576px) {
       & {
         height: 20vh;
@@ -20,6 +20,73 @@
     @media (min-width: 1200px) {
       & {
         height: 30vh;
+      }
+    }
+  }
+  .blogRedes {
+    display: none;
+    z-index: 0;
+    @media (min-width: 768px) {
+      & {
+        @include flexColumn;
+        position: fixed;
+        gap: 1rem;
+        right: 2rem;
+        top: 49vh;
+        width: 2rem;
+      }
+      a .youtube {
+        height: 32px !important;
+        width: 32px !important;
+      }
+    }
+    @media (min-width: 768px) and (min-height: 768px) {
+      & {
+        right: 2rem;
+        top: 60vh;
+        width: 2rem;
+      }
+    }
+    @media (min-width: 992px) {
+      & {
+        right: 5rem;
+        top: 57vh;
+        width: 2rem;
+      }
+    }
+    @media (min-width: 992px) and (min-height: 768px) {
+      & {
+        right: 5rem;
+        top: 62vh;
+        width: 2rem;
+      }
+    }
+    @media (min-width: 992px) and (min-height: 1200px) {
+      & {
+        right: 5rem;
+        top: 42vh;
+        width: 2rem;
+      }
+    }
+    @media (min-width: 1200px) and (min-height: 768px) {
+      & {
+        right: 10rem;
+        top: 70vh;
+        width: 2rem;
+      }
+    }
+    @media (min-width: 1200px) and (min-height: 992px) {
+      & {
+        right: 10rem;
+        top: 75vh;
+        width: 2rem;
+      }
+    }
+    @media (min-width: 1200px) and (min-height: 1200px) {
+      & {
+        right: 10rem;
+        top: 70vh;
+        width: 2rem;
       }
     }
   }
@@ -48,12 +115,17 @@
     align-items: flex-start;
     @media (min-width: 768px) {
       & {
-        @include padding-Y(2rem, 2rem);
+        @include padding-Y(5rem, 5rem);
       }
     }
     @media (min-width: 992px) {
       & {
-        @include padding-Y(8rem, 8rem);
+        @include padding-Y(10rem, 10rem);
+      }
+    }
+    @media (min-width: 1200px) {
+      & {
+        @include padding-Y(14rem, 14rem);
       }
     }
     p {

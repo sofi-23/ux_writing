@@ -27,28 +27,82 @@
 
 .eventos {
   @include padding-X(2rem, 0);
+  justify-content: center;
+  gap: 2rem;
   h4 {
     @include padding-X(3.5rem, 2rem);
   }
   .eventosTarjeta {
-    @include flexJusCen;
-    @include padding-X(2rem, 0);
-    .eventosTarjetaCuerpo {
-      @include flexColumn;
-      justify-content: space-evenly;
-      height: 100%;
-      .card-title {
-        @include padding-Y(0, 1rem);
+    @include padding-Y(2rem, 2rem);
+    @media (min-width: 576px) {
+      & {
+        @include padding-Y(4rem, 4rem);
       }
-      .card-text {
-        @include padding-Y(0, 1rem);
+    }
+    @media (min-width: 768px) {
+      & {
+        @include padding-Y(0rem, 0rem);
+        flex-basis: 42%;
       }
-      .eventosBotonCaja {
-        @include padding-Y(2rem, 0);
-        display: flex;
-        justify-content: end;
+    }
+    @media (min-width: 992px) {
+      & {
+        padding: 0;
+        flex-basis: 45%;
+      }
+    }
+    .col-lg-5 {
+      @media (min-width: 992px) {
+        & {
+          padding: 0;
+        }
+      }
+      img {
+        @media (min-width: 992px) {
+          & {
+            height: 100%;
+          }
+        }
+      }
+    }
+    .col-lg-7 {
+      @media (min-width: 992px) {
+        & {
+          padding: 0;
+        }
+      }
+      .eventosTarjetaCuerpo {
+        @include flexColumn;
+        @media (min-width: 992px) {
+          & {
+            height: 100%;
+            justify-content: space-between;
+          }
+        }
+        h5 {
+          @include padding-X(0, 1rem);
+          @media (min-width: 992px) {
+            & {
+              @include padding-X(0, 0);
+              text-align: start;
+            }
+          }
+        }
+        p {
+          text-align: center;
+          @media (min-width: 992px) {
+            & {
+              text-align: start;
+            }
+          }
+        }
         .eventosBoton {
-          width: 25%;
+          align-self: center;
+          @media (min-width: 992px) {
+            & {
+              align-self: flex-end;
+            }
+          }
         }
       }
     }
@@ -57,14 +111,12 @@
     @include flexJusCen;
     @include padding-X(2rem, 2rem);
     .botonMasEventos {
-      width: 10%;
+      width: 140px;
     }
   }
 }
 .repositorio {
-  @include padding-X(2rem, 0);
   .repositorioTarjeta {
-    @include padding-X(2rem, 0);
     @include flexJusCen;
     .repositorioTarjetaCuerpo {
       @include flexColumn;
@@ -75,7 +127,7 @@
     @include padding-X(2rem, 2rem);
     .repositorioBoton {
       font-family: $sans;
-      width: 15%;
+      width: 152px;
     }
   }
 }
