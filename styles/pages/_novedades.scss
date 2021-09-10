@@ -131,3 +131,16 @@
     }
   }
 }
+
+@media (max-width: 992px) {
+  .heroNovedades {
+    background-image: url("../img/novedades/heroNovedades_mob.png");
+  
+  }
+  .containeryt {
+    padding: 0;
+  }
+  .imgYbNovedades {
+    width: 100%;
+  }
+}

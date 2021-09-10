@@ -95,6 +95,9 @@
 }
 
 @media (max-width: 768px) {
+  .homeSobreNosotras {
+    background-image: url("../img/index/sn_mob.png");
+  }
   .snContainer {
     padding: 2rem ;
       .titulo {
@@ -106,6 +109,7 @@
     width: 15px !important;
   } 
 }
+
 
 
 
