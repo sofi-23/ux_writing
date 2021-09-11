@@ -36,10 +36,32 @@
           >
             <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
             <!--ICONO--></button
-          ><!--Menú hamburguesa-->
+          ><!--Menú Mobile-->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto navList">
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown d-block d-lg-none navLiMob">
+                <a class="nav-link dropdown-toggle navLink navLinkMob" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Cursos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item text-center" href="#">Curso de UX Writing</a></li>
+                  <li><a class="dropdown-item text-center" href="#">Introducción al UX w</a></li>
+                  <li><a class="dropdown-item text-center" href="#">Tienda de cursos</a></li>
+                </ul>
+              </li>    
+              <li class="nav-item dropdown d-block d-lg-none navLiMob">
+                <a class="nav-link dropdown-toggle navLink navLinkMob" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Novedades
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item text-center" href="#">Blog</a></li>
+                  <li><a class="dropdown-item text-center" href="#">Canal de youtube</a></li>
+                  <li><a class="dropdown-item text-center" href="#">Eventos / Webinars</a></li>
+                  <li><a class="dropdown-item text-center" href="#">Repositorio ux</a></li>
+                </ul>
+              </li>
+              <!--Menu desktop-->
+              <li class=" d-none d-lg-block nav-item dropdown">
                 <div class="btn-group">
                   <button type="button" class="btn navToggler">
                     <a class="nav-link navLink" href="./cursos.html">Cursos</a>
@@ -73,7 +95,7 @@
                   </ul>
                 </div>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown d-none d-lg-block">
                 <div class="btn-group">
                   <button type="button" class="btn navToggler">
                     <a class="nav-link navLink" href="./novedades.html"
@@ -130,7 +152,7 @@
               </li>
             </ul>
           </div>
-        </div>
+        
       </nav>
     </header>
     <main>
@@ -140,46 +162,16 @@
       <section class="container blog">
         <h4 class="novedadesBlogTitulo text-center mt-5 titulo">Blog</h4>
         <div class="d-flex-column d-md-flex justify-content-between mt-4">
-          <div class="card m-auto mt-5 mt-md-2" style="width: 18rem">
+          <div class="card m-auto mt-5 mt-md-2" style="width: 22rem">
             <a href="./blog1.html"><img src="./img/novedades/cards_blog.png" class="card-img-top" alt="..." /></a>
             <div class="card-body">
-              <h5 class="card-title">Titulo mediano 24</h5>
-              <h6>Subtítulo</h6>
+              <h5 class="card-title">Como armar tu portfolio de UX</h5>
+              <h6>Portfolio</h6>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Punteo de información relevante para poder armar tu portfolio de UX para reclutadores.
               </p>
             </div>
           </div>
-          <div class="card m-auto mt-5 mt-md-2 " style="width: 18rem">
-            <img
-              src="./img/novedades/cards_blog.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Titulo mediano 24</h5>
-              <h6>Subtítulo</h6>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-          <div class="card m-auto mt-5 mt-md-2" style="width: 18rem">
-            <img
-              src="./img/novedades/cards_blog.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Titulo mediano 24</h5>
-              <h6>Subtítulo</h6>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
           </div>
         </div>
         <div class="d-flex justify-content-center">
@@ -193,10 +185,7 @@
           <div class="col-12 col-md-4"><img src="./img/novedades/canal_youtube.png" class="imgYbNovedades" /></div>
           <div class="col-12 col-md-4 col-xl-5">
             <p class="texto mt-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-              perspiciatis quam suscipit corporis, consequuntur blanditiis ex
-              officiis quasi nostrum quisquam sint aliquid dolorum a doloribus,
-              illo, sed dolores laboriosam natus.
+              Canal con webinars sobre UX y entrevistas a profesionales del sector.
             </p>
             <img src="./img/novedades/youtube_novedades.svg" class="iconoYbNovedades mt-3 p-lg-1 mt-lg-4" /><a href="#"
               >Ir al canal</a

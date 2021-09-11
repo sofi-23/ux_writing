@@ -94,28 +94,13 @@
   align-items: center;
 }
 
-@media (max-width: 768px) {
-  .homeSobreNosotras {
-    background-image: url("../img/index/sn_mob.png");
-  }
-  .snContainer {
-    padding: 2rem ;
-      .titulo {
-        margin-bottom: 1rem;
-      }
-    } 
-  .indicadorCarrusel {
-    height: 4px !important;
-    width: 15px !important;
-  } 
-}
 
 
 
 
 @media (max-width: 992px) {
   .tituloCarrusel {
-    margin-top: 20% !important;
+    margin-top: 30% !important;
     font-size: 2rem !important;
   }
   .subtituloCarrusel {
@@ -125,7 +110,7 @@
 
 @media (min-width:992px) {
     .tituloCarrusel {
-    margin-top: 40% !important;
+    margin-top: 40vh !important;
   }
   .texto1 {
     width: 45%;
@@ -159,4 +144,22 @@
   .homeCursos {
     margin-bottom: 8rem;
   }
+
+}
+
+@media (max-width: 768px) {
+    .homeSobreNosotras {
+    background-image: url("../img/index/sn_mob.png");
+  }
+  .snContainer {
+    padding: 2rem ;
+      .titulo {
+        margin-bottom: 1rem;
+      }
+    } 
+  .indicadorCarrusel {
+    height: 4px !important;
+    width: 15px !important;
+  } 
+
 }

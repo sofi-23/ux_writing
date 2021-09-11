@@ -36,10 +36,32 @@
           >
             <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
             <!--ICONO--></button
-          ><!--Menú hamburguesa-->
+          ><!--Menú Mobile-->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto navList">
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown d-block d-lg-none navLiMob">
+                <a class="nav-link dropdown-toggle navLink navLinkMob" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Cursos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item text-center" href="#">Curso de UX Writing</a></li>
+                  <li><a class="dropdown-item text-center" href="#">Introducción al UX w</a></li>
+                  <li><a class="dropdown-item text-center" href="#">Tienda de cursos</a></li>
+                </ul>
+              </li>    
+              <li class="nav-item dropdown d-block d-lg-none navLiMob">
+                <a class="nav-link dropdown-toggle navLink navLinkMob" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Novedades
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item text-center" href="#">Blog</a></li>
+                  <li><a class="dropdown-item text-center" href="#">Canal de youtube</a></li>
+                  <li><a class="dropdown-item text-center" href="#">Eventos / Webinars</a></li>
+                  <li><a class="dropdown-item text-center" href="#">Repositorio ux</a></li>
+                </ul>
+              </li>
+              <!--Menu desktop-->
+              <li class=" d-none d-lg-block nav-item dropdown">
                 <div class="btn-group">
                   <button type="button" class="btn navToggler">
                     <a class="nav-link navLink" href="./cursos.html">Cursos</a>
@@ -47,7 +69,6 @@
                   <button
                     type="button"
                     class="
-                    
                       btn
                       nav-link
                       navLink
@@ -59,7 +80,6 @@
                     aria-expanded="false"
                     id="navbarDropdown"
                   >
-                  
                     <span class="sr-only">Toggle Dropdown</span>
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -75,7 +95,7 @@
                   </ul>
                 </div>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown d-none d-lg-block">
                 <div class="btn-group">
                   <button type="button" class="btn navToggler">
                     <a class="nav-link navLink" href="./novedades.html"
@@ -98,7 +118,7 @@
                   >
                     <span class="sr-only">Toggle Dropdown</span>
                   </button>
-                  <ul class="dropdown-menu dropdownMobile" aria-labelledby="navbarDropdown">
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li>
                       <a class="dropdown-item" href="#">Blog</a>
                     </li>
@@ -132,7 +152,7 @@
               </li>
             </ul>
           </div>
-        </div>
+        
       </nav>
     </header>
     <main>
@@ -232,43 +252,13 @@
               alt="ux writing argentina"
             />
             <div class="card-body">
-              <h5 class="card-title">Curso de UX Writing</h5>
+              <h5 class="card-title">¿UX Qué?</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                El curso es una aproximación a entender un poco más sobre la disciplina del UX Writing.
               </p>
               <a href="#" class="btn botonCeleste rounded-pill botonCard">Más info</a>
             </div>
           </div>
-          <div class="card  m-auto mt-5" style="width: 18rem">
-            <img
-              src="./img/index/cardsCursos.png"
-              class="card-img-top"
-              alt="ux writing argentina"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Curso de UX Writing</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn botonCeleste rounded-pill botonCard">Más info</a>
-            </div>
-          </div>
-          <div class="card  m-auto mt-5" style="width: 18rem">
-            <img
-              src="./img/index/cardsCursos.png"
-              class="card-img-top"
-              alt="ux writing argentina"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Curso de UX Writing</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn botonCeleste rounded-pill botonCard">Más info</a>
-            </div>
           </div>
         </div>
       </section>
