@@ -46,7 +46,6 @@
   }
   .youtube {
     @extend .instagram;
-    padding-top: 0;
   }
   .linkedin {
     @extend .instagram;
@@ -67,7 +66,6 @@
       }
     }
     .accordion-button:not(.collapsed) {
-      color: $naranjaLinks;
       background-color: $acordion;
       border: none;
     }
@@ -80,6 +78,6 @@
   }
   .fondoAcordion {
     background-color: $acordion;
-    color: $naranjaLinks;
+    color: $negroTextos;
   }
 }

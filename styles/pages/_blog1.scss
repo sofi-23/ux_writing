@@ -31,62 +31,20 @@
         @include flexColumn;
         position: fixed;
         gap: 1rem;
-        right: 2rem;
-        top: 49vh;
-        width: 2rem;
-      }
-      a .youtube {
-        height: 32px !important;
-        width: 32px !important;
-      }
-    }
-    @media (min-width: 768px) and (min-height: 768px) {
-      & {
-        right: 2rem;
-        top: 60vh;
-        width: 2rem;
+        right: 0.8rem;
+        top: 75vh;
+        width: 4rem;
       }
     }
     @media (min-width: 992px) {
       & {
         right: 5rem;
-        top: 57vh;
-        width: 2rem;
       }
     }
-    @media (min-width: 992px) and (min-height: 768px) {
+    @media (min-width: 1200px) {
       & {
-        right: 5rem;
-        top: 62vh;
-        width: 2rem;
-      }
-    }
-    @media (min-width: 992px) and (min-height: 1200px) {
-      & {
-        right: 5rem;
-        top: 42vh;
-        width: 2rem;
-      }
-    }
-    @media (min-width: 1200px) and (min-height: 768px) {
-      & {
-        right: 10rem;
-        top: 70vh;
-        width: 2rem;
-      }
-    }
-    @media (min-width: 1200px) and (min-height: 992px) {
-      & {
-        right: 10rem;
-        top: 75vh;
-        width: 2rem;
-      }
-    }
-    @media (min-width: 1200px) and (min-height: 1200px) {
-      & {
-        right: 10rem;
-        top: 70vh;
-        width: 2rem;
+        right: 8rem;
+        top: 80vh;
       }
     }
   }

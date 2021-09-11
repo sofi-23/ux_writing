@@ -18,8 +18,8 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-attachment: fix;
-      background-position-x: center;
       background-position-y: center;
+      background-position-x: center;
       @include padding-X(2rem, 2rem);
     }
   }
@@ -29,10 +29,10 @@
     }
   }
   .informacionRow {
+    @include padding-Y(1rem, 1rem);
     flex-direction: column;
     align-items: flex-end;
     align-self: center;
-    @include padding-Y(1rem, 1rem);
     @media (min-width: 768px) {
       & {
         @include padding-Y(4rem, 4rem);
@@ -51,11 +51,24 @@
         color: $blanco;
       }
       p {
+        margin-bottom: 0.5rem;
         color: $blanco;
         text-align: center;
         @media (min-width: 992px) {
           & {
+            align-self: start;
+            @include padding-Y(2rem, 4rem);
             text-align: start;
+          }
+        }
+        @media (min-width: 1200px) {
+          & {
+            @include padding-Y(2rem, 4rem);
+          }
+        }
+        @media (min-width: 1400px) {
+          & {
+            @include padding-Y(4rem, 6rem);
           }
         }
       }
@@ -111,21 +124,38 @@
 
 .requisitosYdirigido {
   @include padding-X(3rem, 2rem);
-}
-.requisitos {
-  @include padding-X(1rem, 1rem);
-  @media (min-width: 768px) {
-    & {
-      @include padding-X(2rem, 2rem);
+  .requisitos {
+    @include padding-X(1rem, 1rem);
+    @include flexColumn;
+    @media (min-width: 768px) {
+      & {
+        @include padding-X(2rem, 2rem);
+      }
+    }
+    .titulo {
+      @include padding-X(0, 1rem);
+    }
+    .texto {
+      @include padding-Y(2rem, 2rem);
+      @include flexColumn;
+      align-items: center;
+      @media (min-width: 768px) {
+        & {
+          @include padding-Y(2rem, 2rem);
+        }
+      }
+      @media (min-width: 992px) {
+        & {
+          @include padding-Y(4rem, 4rem);
+        }
+      }
     }
   }
-  .titulo {
-    @include padding-X(0, 1rem);
+  .dirigido {
+    @extend .requisitos;
   }
 }
-.dirigido {
-  @extend .requisitos;
-}
+
 .docente {
   @include flexJusCen;
   font-family: $sans;
