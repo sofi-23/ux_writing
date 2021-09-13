@@ -688,6 +688,11 @@ html {
   padding-left: 1rem;
 }
 
+.linkNovedades {
+  text-decoration: none;
+  color: #ffff;
+}
+
 .eventos {
   padding-top: 2rem;
   padding-bottom: 4rem;
