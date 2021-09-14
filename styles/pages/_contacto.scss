@@ -65,6 +65,9 @@
         width: 75%;
       }
     }
+    a {
+      text-decoration: none;
+    }
     .accordion-button:not(.collapsed) {
       background-color: $acordion;
       border: none;
